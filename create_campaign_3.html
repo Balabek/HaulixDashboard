@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Haulix (App)</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap & Custom Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/yobni.css" rel="stylesheet">
+    <link href="css/haulix.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <nav class="navbar navbar-default haulix_navbar">
+        <div class="container">
+            <!-- Toggler -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#haulixnav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo_4_app.png" class="img-responsive logo_4_app"> </a>
+            </div>
+
+            <!-- Collect sh*t-->
+            <div class="collapse navbar-collapse" id="haulixnav">
+                <ul class="nav navbar-nav navbar-right haulix_main_menu">
+                    <li><a href="dashboard.html"><span class="button_icon dashboard"></span>Dashboard</a></li>
+                    <li><a href="promos.html"><span class="button_icon promos"></span>Promos</a></li>
+                    <li><a href="contacts.html"><span class="button_icon contacts"></span>Contacts</a></li>
+                    <li class="active"><a href="campaigns.html"><span class="button_icon campaigns"></span>Campaigns</a></li>
+                    <li><a href="anti_piracy.html"><span class="button_icon antipiracy"></span>Anti-Piracy</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="button_icon settings"></span>Settings</a>
+                        <ul class="dropdown-menu haulix_main_submenu">
+                            <li><a href="settings_general_info.html"><i class="fa fa-info-circle"></i>General Information</a></li>
+                            <li><a href="plan_info.html"><i class="fa fa-calendar"></i>Plan Information</a></li>
+                            <li><a href="payment_setup.html"><i class="fa fa-credit-card"></i>Payment Setup</a></li>
+                            <li><a href="extra_user_accounts.html"><i class="fa fa-user"></i>Extra User Accounts</a></li>
+                            <li><a href="reports.html"><i class="fa fa-file-text"></i>Reports</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Navbar END -->
+
+    <div class="campaigns_midmain_area">
+        <div class="container">
+            <div class="row">
+                <section class="user_greeting_box pull-right">
+                    <h3>Hi, <span id="user_name">Kelly</span></h3>
+                    <span class="user_thumb user_001"></span>
+                    <span class="notification_box"><a href="#"><i class="fa fa-bell-o fa-2x"></i></a>
+                        <span id="notification_nr" class="notification_number animated flipInY">428</span>
+                    </span>
+                </section>
+                <div class="clearfix"></div>
+                <section class="col-sm-5 pull-left dashboard_info_box">
+                    <h2>Create Campaign</h2>
+                    <p>Start a new campaign</p>
+                </section>
+                <section class="col-sm-5 pull-right dashboard_info_box_rite">
+                    <p>Last updated <span id="update_date">Yesterday</span> at <span id="update_time">3:36AM</span></p>
+                    <section class="pull-right refresh_button_box">
+                        <a href="javascript:void(0)"><i class="fa fa-refresh fa-2x hvr-shrink"></i> </a>
+                        <small>Refresh</small>
+                    </section>
+                </section>
+
+                <div class="five_step_progress_holder col-sm-12">
+                    <ul class="progress-indicator">
+                        <li class="completed"><span class="bubble"><span class="progress_indicator_step_ttl">Start</span></span></li>
+                        <li class="completed"><span class="bubble"><span class="progress_indicator_step_ttl">Promos</span></span></li>
+                        <li class="current"> <span class="bubble"><span class="progress_indicator_step_ttl current">Recipients</span></span> </li>
+                        <li> <span class="bubble"><span class="progress_indicator_step_ttl">Content & Design</span></span> </li>
+                        <li> <span class="bubble"><span class="progress_indicator_step_ttl">Finish</span></span> </li>
+                    </ul>
+                </div>
+
+                <div class="create_new_campaign_midmain_holder col-sm-12">
+
+                    <div class="col-sm-5 contact_search_holder">
+                        <h5>Select individual contacts or include groups</h5>
+                        <div class="searchbox">
+                            <button type="submit" class="go_seacrh_contacts_icon"><i class="fa fa-search hvr-shrink"></i></button>
+                            <input type="search" id="select_contacts_inner" placeholder="Search Contacts" onfocus="placeholder='' " onblur="placeholder='Search Contacts' ">
+                            <button class="btn btn-default include_contacts_btn">Include</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-offset-1 col-md-6 col-sm-6 recipient_search_holder">
+                        <section class="recipient_number_holder">
+                            <h5>Recipients</h5>
+                            <span id="rcpnts_nr">9</span>
+                            <a href="javascript:void(0)">Clear All</a>
+                        </section>
+                        <div class="searchbox">
+                            <input type="search" id="recipient_search" placeholder="Ex: Group, Recipient Name, Company or Email " onfocus="placeholder='' " onblur="placeholder='Ex: Group, Recipient Name, Company or Email' ">
+                            <button type="submit" id="rcpnt_srch" class="btn btn-default recipient_search_btn">Search</button>
+                        </div>
+                    </div>
+
+                    <section class="inclusion_explanation_holder">
+                        <p>
+                            Use the <strong>Include</strong> buttons to define your email's recipient list.
+                            Every included contact will only get emailed once. Contacts in an excluded
+                            group <i>will not</i> get emailed.
+                        </p>
+                    </section>
+
+                    <!-- !!!!!!!!!!!!!!!!!!!!!!! To Whom It Might Concern !!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+                    <!-- There are empty divs with '.included_popup_box' class after each '.recipient_box' div -->
+                    <!-- It's developed with the logic that in future the '.included_popup' will be injected into
+                     that '.included_popup_box' div on a particular event (e.g. a button click) -->
+
+                    <div class="col-sm-6 include_xclude_box_holder">
+
+                        <div class="well recipient_box rcp_grey">
+                            <section class="col-sm-6 col-xs-6 rcp_ttl_holder">
+                                <h4 class="rcp_ttl">All contacts</h4>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_group_number">
+                                <p>4832</p>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_include_btn">Include</button>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_xclude_btn">Exclude</button>
+                            </section>
+                        </div>
+
+                        <div class="included_popup_box">
+
+                        </div>
+
+                        <div class="well recipient_box rcp_white">
+                            <section class="col-sm-6 col-xs-6 rcp_ttl_holder">
+                                <h4 class="rcp_ttl">Hasn't viewed promo(s)</h4>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_group_number">
+                                <p>0</p>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_include_btn">Include</button>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_xclude_btn">Exclude</button>
+                            </section>
+                        </div>
+
+                        <div class="included_popup_box">
+
+                        </div>
+
+                        <div class="well recipient_box rcp_grey">
+                            <section class="col-sm-6 col-xs-6 rcp_ttl_holder">
+                                <h4 class="rcp_ttl">Hasn't streamed or downloaded album(s)</h4>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_group_number">
+                                <p>0</p>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_include_btn">Include</button>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_xclude_btn">Exclude</button>
+                            </section>
+                        </div>
+
+                        <div class="included_popup_box">
+
+                        </div>
+
+                        <div class="well recipient_box rcp_white">
+                            <section class="col-sm-6 col-xs-6 rcp_ttl_holder">
+                                <h4 class="rcp_ttl">David's contacts</h4>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_group_number">
+                                <p>3351</p>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_include_btn">Include</button>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_xclude_btn">Exclude</button>
+                            </section>
+                        </div>
+
+                        <div class="included_popup_box">
+
+                        </div>
+
+                        <div class="well recipient_box rcp_white excluded">
+                            <section class="col-sm-6 col-xs-6 rcp_ttl_holder">
+                                <h4 class="rcp_ttl">Group 5</h4>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_group_number">
+                                <p>24</p>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_undo_btn">Undo</button>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_xcluded_btn">Excluded</button>
+                            </section>
+                        </div>
+
+                        <div class="included_popup_box">
+
+                        </div>
+
+                        <div class="well recipient_box rcp_white">
+                            <section class="col-sm-6 col-xs-6 rcp_ttl_holder">
+                                <h4 class="rcp_ttl">Group 6</h4>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_group_number">
+                                <p>1</p>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_include_btn">Include</button>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_xclude_btn">Exclude</button>
+                            </section>
+                        </div>
+
+                        <div class="included_popup_box">
+
+                        </div>
+
+                        <div class="well recipient_box rcp_grey">
+                            <section class="col-sm-6 col-xs-6 rcp_ttl_holder">
+                                <h4 class="rcp_ttl">Group 7</h4>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_group_number">
+                                <p>54</p>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_include_btn">Include</button>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_xclude_btn">Exclude</button>
+                            </section>
+                        </div>
+
+                        <div class="included_popup_box">
+
+                        </div>
+
+                        <div class="well recipient_box rcp_white included">
+                            <section class="col-sm-6 col-xs-6 rcp_ttl_holder">
+                                <h4 class="rcp_ttl">Group 8</h4>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_group_number">
+                                <p>138</p>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_undo_btn">Undo</button>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_included_btn">Included</button>
+                            </section>
+                        </div>
+
+                        <div class="included_popup_box">
+                        <div class="included_popup"> <!-- Included Pop-Up Start -->
+                            <div class="col-sm-6 incl_box">
+                                <div class="media incl_box_content">
+                                    <div class="media-left media-top">
+                                        <span class="media-object incl_box_thumb"></span>
+                                    </div>
+                                    <div class="media-body incl_box_body">
+                                        <h6 class="media-heading incl_name">Geoff Sooka</h6>
+                                        <h6 class="media-heading incl_email">sooka68@yahoo.com</h6>
+                                        <p>Group 7</p>
+                                    </div>
+                                </div>
+                                <div class="close_btn_holder pull-right">
+                                    <a href="javascript:void(0)" class="remove_incl_box hvr-shrink"><i class="fa fa-close"></i> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 incl_box">
+                                <div class="media incl_box_content">
+                                    <div class="media-left media-top">
+                                        <span class="media-object incl_box_thumb"></span>
+                                    </div>
+                                    <div class="media-body incl_box_body">
+                                        <h6 class="media-heading incl_name">Melanie Brooks</h6>
+                                        <h6 class="media-heading incl_email">m_brooks1991@gmail.com</h6>
+                                        <p>Group 3</p>
+                                    </div>
+                                </div>
+                                <div class="close_btn_holder pull-right">
+                                    <a href="javascript:void(0)" class="remove_incl_box hvr-shrink"><i class="fa fa-close"></i> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 incl_box">
+                                <div class="media incl_box_content">
+                                    <div class="media-left media-top">
+                                        <span class="media-object incl_box_thumb"></span>
+                                    </div>
+                                    <div class="media-body incl_box_body">
+                                        <h6 class="media-heading incl_name">Michael Cox</h6>
+                                        <h6 class="media-heading incl_email">m_coxxx1@t-mobile.de</h6>
+                                        <p>Group 3</p>
+                                    </div>
+                                </div>
+                                <div class="close_btn_holder pull-right">
+                                    <a href="javascript:void(0)" class="remove_incl_box hvr-shrink"><i class="fa fa-close"></i> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 incl_box">
+                                <div class="media incl_box_content">
+                                    <div class="media-left media-top">
+                                        <span class="media-object incl_box_thumb"></span>
+                                    </div>
+                                    <div class="media-body incl_box_body">
+                                        <h6 class="media-heading incl_name">Darren Emerson</h6>
+                                        <h6 class="media-heading incl_email">danny_sob@yandex.ru</h6>
+                                        <p>Group 7</p>
+                                    </div>
+                                </div>
+                                <div class="close_btn_holder pull-right">
+                                    <a href="javascript:void(0)" class="remove_incl_box hvr-shrink"><i class="fa fa-close"></i> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 incl_box">
+                                <div class="media incl_box_content">
+                                    <div class="media-left media-top">
+                                        <span class="media-object incl_box_thumb"></span>
+                                    </div>
+                                    <div class="media-body incl_box_body">
+                                        <h6 class="media-heading incl_name">Garry Henderson</h6>
+                                        <h6 class="media-heading incl_email">garlax66@gmail.com</h6>
+                                        <p>Group 2</p>
+                                    </div>
+                                </div>
+                                <div class="close_btn_holder pull-right">
+                                    <a href="javascript:void(0)" class="remove_incl_box hvr-shrink"><i class="fa fa-close"></i> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 incl_box">
+                                <div class="media incl_box_content">
+                                    <div class="media-left media-top">
+                                        <span class="media-object incl_box_thumb"></span>
+                                    </div>
+                                    <div class="media-body incl_box_body">
+                                        <h6 class="media-heading incl_name">Omar Moore</h6>
+                                        <h6 class="media-heading incl_email">omar_from_sudan@homail.co.uk</h6>
+                                        <p>Group 8</p>
+                                    </div>
+                                </div>
+                                <div class="close_btn_holder pull-right">
+                                    <a href="javascript:void(0)" class="remove_incl_box hvr-shrink"><i class="fa fa-close"></i> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 incl_box">
+                                <div class="media incl_box_content">
+                                    <div class="media-left media-top">
+                                        <span class="media-object incl_box_thumb"></span>
+                                    </div>
+                                    <div class="media-body incl_box_body">
+                                        <h6 class="media-heading incl_name">Terry Brown</h6>
+                                        <h6 class="media-heading incl_email">terry.brown77@yahoo.com</h6>
+                                        <p>Group 7</p>
+                                    </div>
+                                </div>
+                                <div class="close_btn_holder pull-right">
+                                    <a href="javascript:void(0)" class="remove_incl_box hvr-shrink"><i class="fa fa-close"></i> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 incl_box">
+                                <div class="media incl_box_content">
+                                    <div class="media-left media-top">
+                                        <span class="media-object incl_box_thumb"></span>
+                                    </div>
+                                    <div class="media-body incl_box_body">
+                                        <h6 class="media-heading incl_name">Linda Gomez</h6>
+                                        <h6 class="media-heading incl_email">lil_mamasita@yahoo.es</h6>
+                                        <p>Group 8</p>
+                                    </div>
+                                </div>
+                                <div class="close_btn_holder pull-right">
+                                    <a href="javascript:void(0)" class="remove_incl_box hvr-shrink"><i class="fa fa-close"></i> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 incl_box">
+                                <div class="media incl_box_content">
+                                    <div class="media-left media-top">
+                                        <span class="media-object incl_box_thumb"></span>
+                                    </div>
+                                    <div class="media-body incl_box_body">
+                                        <h6 class="media-heading incl_name">Cortney Banks</h6>
+                                        <h6 class="media-heading incl_email">c_banks_1995@gmail.com</h6>
+                                        <p>Group 5</p>
+                                    </div>
+                                </div>
+                                <div class="close_btn_holder pull-right">
+                                    <a href="javascript:void(0)" class="remove_incl_box hvr-shrink"><i class="fa fa-close"></i> </a>
+                                </div>
+                            </div>
+                        </div> <!-- Included Pop-Up END -->
+                        </div>
+
+                        <div class="well recipient_box rcp_grey">
+                            <section class="col-sm-6 col-xs-6 rcp_ttl_holder">
+                                <h4 class="rcp_ttl">Group 9</h4>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_group_number">
+                                <p>24</p>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_include_btn">Include</button>
+                            </section>
+                            <section class="col-sm-2 col-xs-2 rcp_btn_holder">
+                                <button class="btn btn-default rcp_xclude_btn">Exclude</button>
+                            </section>
+                        </div>
+
+                        <div class="included_popup_box">
+
+                        </div>
+
+                    </div> <!-- Include/Exclude box END -->
+
+                </div>
+            </div> <!-- Main Row END -->
+        </div>
+    </div>
+
+
+</div> <!-- Main -->
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- JS Files -->
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/donutcharts.js"></script>-->
+<script src="js/select2.full.js"></script>
+<script type="text/javascript">
+
+    $('#promo_sorter').select2({
+        width: '35%',
+        minimumResultsForSearch: -1,
+        placeholder: 'Sort by'
+    });
+
+</script>
+<script src="js/haulix.js"></script>
+</body>
+</html>

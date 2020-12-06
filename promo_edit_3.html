@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Haulix (App)</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap & Custom Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/haulix.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <nav class="navbar navbar-default haulix_navbar">
+        <div class="container">
+            <!-- Toggler -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#haulixnav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo_4_app.png" class="img-responsive logo_4_app"> </a>
+            </div>
+
+            <!-- Collect sh*t-->
+            <div class="collapse navbar-collapse" id="haulixnav">
+                <ul class="nav navbar-nav navbar-right haulix_main_menu">
+                    <li><a href="dashboard.html"><span class="button_icon dashboard"></span>Dashboard</a></li>
+                    <li class="active"><a href="promos.html"><span class="button_icon promos"></span>Promos</a></li>
+                    <li><a href="contacts.html"><span class="button_icon contacts"></span>Contacts</a></li>
+                    <li><a href="campaigns.html"><span class="button_icon campaigns"></span>Campaigns</a></li>
+                    <li><a href="anti_piracy.html"><span class="button_icon antipiracy"></span>Anti-Piracy</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="button_icon settings"></span>Settings</a>
+                        <ul class="dropdown-menu haulix_main_submenu">
+                            <li><a href="settings_general_info.html"><i class="fa fa-info-circle"></i>General Information</a></li>
+                            <li><a href="plan_info.html"><i class="fa fa-calendar"></i>Plan Information</a></li>
+                            <li><a href="payment_setup.html"><i class="fa fa-credit-card"></i>Payment Setup</a></li>
+                            <li><a href="extra_user_accounts.html"><i class="fa fa-user"></i>Extra User Accounts</a></li>
+                            <li><a href="reports.html"><i class="fa fa-file-text"></i>Reports</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Navbar END -->
+
+    <div class="promos_midmain_area">
+        <div class="container">
+            <div class="row">
+                <section class="user_greeting_box pull-right">
+                    <h3>Hi, <span id="user_name">Kelly</span></h3>
+                    <span class="user_thumb user_001"></span>
+                    <span class="notification_box"><a href="#"><i class="fa fa-bell-o fa-2x"></i></a>
+                        <span id="notification_nr" class="notification_number animated flipInY">82</span>
+                    </span>
+                </section>
+                <div class="clearfix"></div>
+                <section class="col-sm-5 pull-left dashboard_info_box">
+                    <h2>Promo List</h2>
+                    <!--<p>Manage your promo actions.</p>-->
+                </section>
+                <section class="col-sm-5 pull-right dashboard_info_box_rite">
+                    <p>Last updated <span id="update_date">Today</span> at <span id="update_time">11:58PM</span></p>
+                    <section class="pull-right refresh_button_box">
+                        <a href="javascript:void(0)"><i class="fa fa-refresh fa-2x hvr-shrink"></i> </a>
+                        <small>Refresh</small>
+                    </section>
+                </section>
+                <div class="promodesigner_midmain_holder col-sm-12">
+                    <div class="promolist_leftside_holder col-sm-4">
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Slutty Sistazz</p>
+                                <p class="promolist_size">577MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Let's Lick It</p>
+                                <p class="promolist_status"><span class="unlivepromo">Not Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Mark Spoon</p>
+                                <p class="promolist_size">333MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Right In The Fight</p>
+                                <p class="promolist_status"><span class="unlivepromo">Not Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Birdman</p>
+                                <p class="promolist_size">890MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Fly With Ya Ass</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">The Streets</p>
+                                <p class="promolist_size">646MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Dry Your Eyes Mate</p>
+                                <p class="promolist_status"><span class="unlivepromo">Not Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Gay-Z</p>
+                                <p class="promolist_size">603MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Camel Lips</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box selectedpromo">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Janet Jackson</p>
+                                <p class="promolist_size">477MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Unbreakable</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Johny Smash</p>
+                                <p class="promolist_size">443MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Muddy Waters</p>
+                                <p class="promolist_status"><span class="unlivepromo">Not Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Lil' Snitch</p>
+                                <p class="promolist_size">488MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Informer</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">MC Shan</p>
+                                <p class="promolist_size">208MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">The Art of Hating</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">The Transgenders</p>
+                                <p class="promolist_size">399MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">I Believe</p>
+                                <p class="promolist_status"><span class="unlivepromo">Not Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Marina Sharapova</p>
+                                <p class="promolist_size">918MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Do It Like You Should</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">The Creepers</p>
+                                <p class="promolist_size">353MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Blood In My Throat</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Ruben Esperanza</p>
+                                <p class="promolist_size">713MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Toma Mi Pelotas</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Mushroom Joy</p>
+                                <p class="promolist_size">279MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Intoxicated</p>
+                                <p class="promolist_status"><span class="unlivepromo">Not Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Depeche Mode</p>
+                                <p class="promolist_size">560MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Ultra</p>
+                                <p class="promolist_status"><span class="unlivepromo">Not Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">The Cinematic Orchestra</p>
+                                <p class="promolist_size">371MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Flamingo Ride</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Mad and Spectral</p>
+                                <p class="promolist_size">208MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Paradise EP</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Prince</p>
+                                <p class="promolist_size">642MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">The Love Symbol</p>
+                                <p class="promolist_status"><span class="unlivepromo">Not Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Taylor Swift</p>
+                                <p class="promolist_size">382MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Useless Chick</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Aerosmith</p>
+                                <p class="promolist_size">582MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Get A Grip</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                        <div class="promolist_box">
+                            <section class="upperside">
+                                <p class="promolist_ttl">Chatlax Starz</p>
+                                <p class="promolist_size">686MB</p>
+                            </section>
+                            <div class="clearfix"></div>
+                            <section class="downside">
+                                <p class="promolist_relese_ttl">Road To Hell (The Album)</p>
+                                <p class="promolist_status"><span class="livepromo">Live</span></p>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="promolist_info col-sm-8">
+                        <section class="col-sm-4 promolist_cover_box">
+                            <span class="promolist_cover" style="background: url('https://upload.wikimedia.org/wikipedia/en/c/c6/Janet_Jackson_-_Unbreakable_(Official_Album_Cover).png') center center no-repeat; background-size: cover;"></span>
+                            <p class="promolist_cover_document"><a href="#">Janet_Jackson_-_Unbreakable.pdf</a></p>
+                        </section>
+                        <section class="col-sm-8 promolist_detailz_holder">
+                            <section class="promo_details_summary_boxxy">
+                                <p>Release<br>Date</p>
+                                <span>21/11/2015</span>
+                            </section>
+                            <section class="promo_details_summary_boxxy">
+                                <p>Live<br>Date</p>
+                                <span>09/03/2016</span>
+                            </section>
+                            <section class="promo_details_summary_boxxy">
+                                <p>Expiration<br>Date</p>
+                                <span>18/11/2016</span>
+                            </section>
+                            <section class="promo_details_summary_boxxy">
+                                <p>Download<br>Limit</p>
+                                <span>3</span>
+                            </section>
+                            <section class="promo_details_summary_boxxy">
+                                <p>Stream<br>Limit</p>
+                                <span>Unlimited</span>
+                            </section>
+                            <hr class="promolist_separator">
+                            <section class="promo_status_info_holder">
+                                <p class="promo_status_info">This promo is set to be <b>private</b> (invitation only)</p>
+                                <p class="promo_status_info_2" style="color: #e16846;">Downloading is limited to <b>3</b> per contact</p>
+                                <p class="promo_status_info_2" style="color: #27a8d4;">Unlimited <b>Streaming</b></p>
+                                <p class="promo_status_info_2" style="color: #000000;"><b>Watermarking</b> is enabled</p>
+                            </section>
+                            <section class="promolist_info_summary_lines_holder">
+                                <div class="promolist_info_summary_line greystripe">
+                                    <small>Artist</small>
+                                    <p>Janet Jackson</p>
+                                </div>
+                                <div class="promolist_info_summary_line whitestripe">
+                                    <small>Title</small>
+                                    <p>Unbreakable</p>
+                                </div>
+                                <div class="promolist_info_summary_line greystripe">
+                                    <small>Record Label</small>
+                                    <p>Acme Records</p>
+                                </div>
+                            </section>
+                            <a href="#" class="predescriptionlink">www.comatosemusic.com</a>
+                            <section class="promolist_detailed_description">
+                                <p>
+                                    Unbreakable is the eleventh studio album by American singer Janet Jackson.
+                                    It was released on October 2, 2015, and is the first album released under her
+                                    independent label Rhythm Nation, disseminated by BMG Rights Management.
+                                    Seven years prior to its development, Jackson parted ways with Island Records due
+                                    to dissatisfaction over the company's lack of promotion for her tenth studio album
+                                    Discipline (2008).
+                                </p>
+                                <p>
+                                    As a result, speculation arose as to whether she would pursue
+                                    yet another traditional recording contract with a major label or release music
+                                    through alternative means, such as the 360 deals offered by Live Nation
+                                    Entertainment.
+                                </p>
+                            </section>
+                            <section class="promolist_playlist_holder">
+                                <div class="promolist_traxbox">
+                                    <p>01 - All You Need Is Now</p>
+                                </div>
+                                <div class="promolist_traxbox">
+                                    <p>02 - Blame The Machines</p>
+                                </div>
+                                <div class="promolist_traxbox">
+                                    <p>03 - Being Followed</p>
+                                </div>
+                                <div class="promolist_traxbox">
+                                    <p>04 - Leave A Light On</p>
+                                </div>
+                                <div class="promolist_traxbox">
+                                    <p>05 - Safe</p>
+                                </div>
+                                <div class="promolist_traxbox">
+                                    <p>06 - A Diamond In The Mind</p>
+                                </div>
+                                <div class="promolist_traxbox">
+                                    <p>06 - The Man Who Stole A Leopoard</p>
+                                </div>
+                                <div class="promolist_traxbox">
+                                    <p>07 - My Best Friend</p>
+                                </div>
+
+                            </section>
+                        </section>
+                    </div>
+
+
+                </div> <!-- Promo Designer Midmain END-->
+            </div> <!-- Main Row END -->
+        </div>
+    </div>
+
+</div> <!-- Main END -->
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- JS Files -->
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/donutcharts.js"></script>-->
+<script src="js/haulix.js"></script>
+</body>
+</html>

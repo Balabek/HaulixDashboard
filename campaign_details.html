@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Haulix (App)</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap & Custom Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/haulix.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <nav class="navbar navbar-default haulix_navbar">
+        <div class="container">
+            <!-- Toggler -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#haulixnav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo_4_app.png" class="img-responsive logo_4_app"> </a>
+            </div>
+
+            <!-- Collect sh*t-->
+            <div class="collapse navbar-collapse" id="haulixnav">
+                <ul class="nav navbar-nav navbar-right haulix_main_menu">
+                    <li><a href="dashboard.html"><span class="button_icon dashboard"></span>Dashboard</a></li>
+                    <li><a href="promos.html"><span class="button_icon promos"></span>Promos</a></li>
+                    <li><a href="contacts.html"><span class="button_icon contacts"></span>Contacts</a></li>
+                    <li class="active"><a href="campaigns.html"><span class="button_icon campaigns"></span>Campaigns</a></li>
+                    <li><a href="anti_piracy.html"><span class="button_icon antipiracy"></span>Anti-Piracy</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="button_icon settings"></span>Settings</a>
+                        <ul class="dropdown-menu haulix_main_submenu">
+                            <li><a href="settings_general_info.html"><i class="fa fa-info-circle"></i>General Information</a></li>
+                            <li><a href="plan_info.html"><i class="fa fa-calendar"></i>Plan Information</a></li>
+                            <li><a href="payment_setup.html"><i class="fa fa-credit-card"></i>Payment Setup</a></li>
+                            <li><a href="extra_user_accounts.html"><i class="fa fa-user"></i>Extra User Accounts</a></li>
+                            <li><a href="reports.html"><i class="fa fa-file-text"></i>Reports</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Navbar END -->
+
+    <div class="campaigns_midmain_area">
+        <div class="container">
+            <div class="row">
+                <section class="user_greeting_box pull-right">
+                    <h3>Hi, <span id="user_name">Kelly</span></h3>
+                    <span class="user_thumb user_001"></span>
+                    <span class="notification_box"><a href="#"><i class="fa fa-bell-o fa-2x"></i></a>
+                        <span id="notification_nr" class="notification_number animated flipInY">65</span>
+                    </span>
+                </section>
+                <div class="clearfix"></div>
+                <section class="col-sm-5 pull-left dashboard_info_box">
+                    <h2>Campaign Details</h2>
+                    <p>Manage your campaign details</p>
+                </section>
+                <section class="col-sm-5 pull-right dashboard_info_box_rite">
+                    <p>Last updated <span id="update_date">Today</span> at <span id="update_time">7:42PM</span></p>
+                    <section class="pull-right refresh_button_box">
+                        <a href="javascript:void(0)"><i class="fa fa-refresh fa-2x hvr-shrink"></i> </a>
+                        <small>Refresh</small>
+                    </section>
+                </section>
+                <div class="campaign_details_midmain_holder col-sm-12">
+                    <section class="cmpgn_dtlz_subttl_holder col-sm-4">
+                        <h4>Test Campaign</h4>
+                    </section>
+                    <section class="cmpgn_dtlz_option_buttons_holder pull-right">
+                        <button class="btn cmpgn_dtlz_preview_btn">Preview Email</button>
+                        <button class="btn cmpgn_dtlz_exportpdf_btn">Export PDF Summary</button>
+                    </section>
+                    <div class="clearfix"></div>
+                    <section class="cmpgn_dtlz_promo_info">
+                        <label class="cmpgn_dtlz_promo_invitation">Promo Invitation</label>
+                        <p>Not Sent</p>
+                    </section>
+                    <div class="clearfix"></div>
+
+                    <div class="cmpgn_dtlz_chart_data_holder">
+                        <div class="col-sm-3 col-xs-3 cmpgn_dtlz_donut_holder">
+                            <div id="campaignDetailzChart" class="chart"></div>
+                        </div>
+                        <div class="col-sm-3 col-xs-3 cmpgn_dtlz_counter">
+                            <h4><span id="totalOpens">4</span>Total Opens</h4>
+                            <h4><span id="uniqueOpens">4</span>Unique Opens</h4>
+                            <h4><span id="notOpened">6</span>Not Opened</h4>
+                            <a href="javascript:void(0)">Send reminder to these contacts</a>
+                        </div>
+                        <div class="col-sm-3 col-xs-3 cmpgn_dtlz_counter">
+                            <h4><span id="totalBounced">1</span>Bounced</h4>
+                            <h4><span id="uniqueUnsubscribed">0</span>Unsubscribes</h4>
+                        </div>
+                        <div class="col-sm-3 col-xs-3 cmpgn_dtlz_counter">
+                            <h4><span id="totalClicks">8</span>Clicks</h4>
+                            <a href="javascript:void(0)">Which links?</a>
+                        </div>
+                    </div>
+
+                    <div class="release_stats_holder">
+                        <section class="promo_sorting_buttons_holder">
+                            <label class="promo_sorting stream_lbl">Streams</label>
+                            <label class="promo_sorting track_lbl">Track Downloads</label>
+                            <label class="promo_sorting album_lbl">Full Album Downloads</label>
+                        </section>
+                        <div class="release_holder col-md-2 col-sm-3">
+                            <div class="releasebox">
+                                <a href="#" class="promobox_stats_link">
+                                    <section class="promo_cover_2" style="background: url('https://consequenceofsound.files.wordpress.com/2015/09/janet-jackson-unbreakable-album-cover.jpg') center center no-repeat; background-size: cover;"></section>
+                                    <section class="promo_details">
+                                        <h4 class="artist_name">Janet Jackson</h4>
+                                        <h4 class="album_name">Unbreakable</h4>
+                                    </section>
+                                    <section class="social_activity_boxx">
+                                        <span class="rls_commentz">0<i class="fa fa-comment-o"></i></span>
+                                        <span class="rls_rates">0<i class="fa fa-star-o"></i></span>
+                                    </section>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-3 cmpgn_dtlz_progress_holder_1">
+                            <div class="progress-wrap streaming progress_count" data-progress-percent="7">
+                                <span class="usage_percentage">3</span>
+                                <div class="progress-bar streaming progress_count"></div>
+                            </div>
+                            <div class="progress-wrap track_download progress_count" data-progress-percent="31">
+                                <span class="usage_percentage">37</span>
+                                <div class="progress-bar track_download progress_count"></div>
+                            </div>
+                            <div class="progress-wrap album_download progress_count" data-progress-percent="16">
+                                <span class="usage_percentage">14</span>
+                                <div class="progress-bar album_download progress_count"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 cmpgn_dtlz_progress_holder_2">
+                            <h4>Total across all campaigns</h4>
+                        </div>
+
+                        <div class="col-md-2 col-sm-3 cmpgn_dtlz_progress_holder_3">
+                            <div class="progress-wrap streaming progress_count" data-progress-percent="44">
+                                <span class="usage_percentage">429</span>
+                                <div class="progress-bar streaming progress_count"></div>
+                            </div>
+                            <div class="progress-wrap track_download progress_count" data-progress-percent="26">
+                                <span class="usage_percentage">288</span>
+                                <div class="progress-bar track_download progress_count"></div>
+                            </div>
+                            <div class="progress-wrap album_download progress_count" data-progress-percent="22">
+                                <span class="usage_percentage">215</span>
+                                <div class="progress-bar album_download progress_count"></div>
+                            </div>
+                            <div class="progress-wrap bandwidth_count progress_count" data-progress-percent="48">
+                                <span class="usage_percentage bndwdth_prcntg">1.01GB Bandwidth</span>
+                                <div class="progress-bar album_download progress_count"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Campaign details midmain holder END -->
+
+                <div class="col-sm-12 campaign_details_midmain_holder">
+                    <section class="cmpgn_dtlz_subttl_holder col-sm-4">
+                        <h4>Recipients</h4>
+                    </section>
+                    <div class="cmpgn_dtlz_recipient_box">
+                        <div class="well cmpgn_dtlz_rcpline greystripe">
+                            <section class="col-md-3 col-sm-4 rcpline_nameandemail">
+                                <span class="rcpline_thumb"></span>
+                                <p class="rcp_name_n_mail">Lucas Greenberg</p>
+                                <p class="rcp_name_n_mail">lucas.g@yahoo.com</p>
+                            </section>
+                            <section class="col-md-3 col-sm-4 rcpline_recordlabel">
+                                <p>Spinnin' Records</p>
+                            </section>
+                            <section class="col-md-offset-2 col-sm-offset-0 col-sm-4 rcpline_statuses">
+                                <p>Planned - Invited - Opened - Clicked - Clicked</p>
+                            </section>
+                        </div>
+                        <div class="well cmpgn_dtlz_rcpline whitestripe">
+                            <section class="col-md-3 col-sm-4 rcpline_nameandemail">
+                                <span class="rcpline_thumb"></span>
+                                <p class="rcp_name_n_mail">Belly Hurtado</p>
+                                <p class="rcp_name_n_mail">hurt_nomore@gmail.com</p>
+                            </section>
+                            <section class="col-md-3 col-sm-4 rcpline_recordlabel">
+
+                            </section>
+                            <section class="col-md-offset-2 col-sm-offset-0 col-sm-4 rcpline_statuses">
+                                <p>Planned - Invited - Opened - Clicked - Clicked</p>
+                            </section>
+                        </div>
+                        <div class="well cmpgn_dtlz_rcpline greystripe">
+                            <section class="col-md-3 col-sm-4 rcpline_nameandemail">
+                                <span class="rcpline_thumb"></span>
+                                <p class="rcp_name_n_mail">Marvin F. Suge</p>
+                                <p class="rcp_name_n_mail">example@yahoo.com</p>
+                            </section>
+                            <section class="col-md-3 col-sm-4 rcpline_recordlabel">
+
+                            </section>
+                            <section class="col-md-offset-2 col-sm-offset-0 col-sm-4 rcpline_statuses">
+                                <p>Planned - Invited - Opened - Clicked - Clicked</p>
+                            </section>
+                        </div>
+                        <div class="well cmpgn_dtlz_rcpline whitestripe">
+                            <section class="col-md-3 col-sm-4 rcpline_nameandemail">
+                                <span class="rcpline_thumb"></span>
+                                <p class="rcp_name_n_mail">Lucas Greenberg</p>
+                                <p class="rcp_name_n_mail">lucas.g@yahoo.com</p>
+                            </section>
+                            <section class="col-md-3 col-sm-4 rcpline_recordlabel">
+                                <p>Priority Records</p>
+                            </section>
+                            <section class="col-md-offset-2 col-sm-offset-0 col-sm-4 rcpline_statuses">
+                                <p>Planned - Invited - Opened - Clicked - Clicked</p>
+                            </section>
+                        </div>
+                        <div class="well cmpgn_dtlz_rcpline greystripe">
+                            <section class="col-md-3 col-sm-4 rcpline_nameandemail">
+                                <span class="rcpline_thumb"></span>
+                                <p class="rcp_name_n_mail">Harvey Lamberg</p>
+                                <p class="rcp_name_n_mail">harvey.lamberg@yahoo.com</p>
+                            </section>
+                            <section class="col-md-3 col-sm-4 rcpline_recordlabel">
+                                <p>Alpha Opaque Recordings</p>
+                            </section>
+                            <section class="col-md-offset-2 col-sm-offset-0 col-sm-4 rcpline_statuses">
+                                <p>Planned - Invited - Opened - Clicked - Clicked</p>
+                            </section>
+                        </div>
+                        <div class="well cmpgn_dtlz_rcpline whitestripe">
+                            <section class="col-md-3 col-sm-4 rcpline_nameandemail">
+                                <span class="rcpline_thumb"></span>
+                                <p class="rcp_name_n_mail">Belly Hurtado</p>
+                                <p class="rcp_name_n_mail">hurt_nomore@gmail.com</p>
+                            </section>
+                            <section class="col-md-3 col-sm-4 rcpline_recordlabel">
+
+                            </section>
+                            <section class="col-md-offset-2 col-sm-offset-0 col-sm-4 rcpline_statuses">
+                                <p>Planned - Invited - Opened - Clicked - Clicked</p>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- Main Row END-->
+        </div> <!-- Main container END -->
+    </div> <!-- Campaigns midmain area END -->
+
+</div> <!-- Main END -->
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- JS Files -->
+<script src="js/bootstrap.js"></script>
+<script src="js/donutcharts.js"></script>
+
+<script src="js/haulix.js"></script>
+</body>
+</html>

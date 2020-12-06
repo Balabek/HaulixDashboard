@@ -1,0 +1,2174 @@
+/*
+█▀▄▀█ █▀▀ █▀▀▄ ░▀░ █▀▀█ 　 █▀▀█ █░░█ █▀▀ █▀▀█ ░▀░ █▀▀ █▀▀
+█░▀░█ █▀▀ █░░█ ▀█▀ █░░█ 　 █░░█ █░░█ █▀▀ █▄▄▀ ▀█▀ █▀▀ ▀▀█
+▀░░░▀ ▀▀▀ ▀▀▀░ ▀▀▀ ▀▀▀█ 　 ▀▀▀█ ░▀▀▀ ▀▀▀ ▀░▀▀ ▀▀▀ ▀▀▀ ▀▀▀
+*/
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ GENERAL ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 767px){
+    #haulixnav {
+        position: relative;
+        z-index: 50;
+        border: none;
+        background: rgba(27, 39, 52, 0.98);
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {padding-top: 16px;}
+    ul.haulix_main_submenu li a:hover {
+        background: #d56b4c !important;
+    }
+
+}
+@media screen and (max-width: 373px) {
+    #haulixnav {top: -50px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------- */
+
+
+
+
+
+
+/* ------ Main Navigation (Navbar) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    span.button_icon {display: table; float: none; position: relative; left: 35%; top: -10px;}
+}
+
+@media screen and (max-width: 991px){
+    span.button_icon {display: block; float: left; position: relative; left: initial; top: initial;}
+    ul.haulix_main_menu li a {font-size: 0; padding-left: 20px;}
+}
+
+@media screen and (max-width: 767px){
+    ul.haulix_main_menu li a {font-size: 1.4rem;}
+}
+
+
+
+
+
+
+
+
+/* --------- */
+
+
+
+
+
+
+/* ------ Dashboard Midmain ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 991px){
+    .dashboard_info_box_rite {width: 51%;}
+    .dashboard_info_box_rite small {top: 0;}
+}
+
+@media screen and (max-width: 767px){
+    .user_greeting_box {position: relative; right: 25px;}
+    .dashboard_info_box_rite {float: none !important; margin-top: 50px; width: 98%;}
+
+    .midmain_internal {padding-top: 60px;}
+}
+
+@media screen and (max-width: 375px){
+    .dashboard_info_box_rite {margin-bottom: 85px;}
+    img.logo_4_app {width: 45%;}
+    .dashboard_info_box h2 {margin-top: 50px;}
+}
+
+@media screen and (max-width: 373px){
+    img.logo_4_app {margin-top: -50px;}
+
+    .refresh_button_box {
+        margin-top: 5px;
+        clear: both;
+        float: left !important;
+    }
+}
+
+
+
+
+
+
+
+/* --------- */
+
+
+
+
+
+
+/* ------ 'Storage', 'Bandwidth' & 'Latest Activities' widgets ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .chart_box {width: 45%; margin-bottom: 25px;}
+    .chart_box:first-child {margin-right: 50px;}
+
+    .activity_box {width: 100%;}
+    img.activity_thumb {width: 3%;}
+}
+
+@media screen and (max-width: 767px){
+    .chart_box {display: inline-block;}
+    .activity_box {padding-bottom: 40px; width: 98%;}
+
+}
+
+@media screen and (max-width: 743px){
+    .chart_box {width: 42%; margin-right: 20px;}
+}
+
+@media screen and (max-width: 600px){
+    .chart_holder {padding-left: 0;}
+    img.activity_thumb {width: 5%;}
+}
+
+@media screen and (max-width: 570px){
+    .chart_box {width: 95%;}
+    section.date_n_time_box {margin-top: 24px;}
+    p.activity_info {float: none;}
+}
+
+@media screen and (max-width: 490px){
+    img.activity_thumb {width: 7%;}
+
+    .chart_holder {padding-left: 25%;}
+}
+
+@media screen and (max-width: 400px){
+    .chart_holder {padding-left: 23%;}
+}
+
+@media screen and (max-width: 385px){
+    .chart_holder {padding-left: 20%;}
+}
+
+@media screen and (max-width: 375px){
+    .chart_holder {padding-left: 18%;}
+    img.activity_thumb {width: 10%;}
+}
+
+@media screen and (max-width: 355px){
+    .chart_holder {padding-left: 15%;}
+}
+
+@media screen and (max-width: 330px){
+    .chart_holder {padding-left: 14%;}
+}
+
+
+
+/* --------- */
+
+
+
+
+
+
+/* ------ 'Campaigns' widget ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .haulix_campaign {height: 64px;}
+}
+
+@media screen and (max-width: 991px){
+    .campaign_name_holder {margin-top: -13px; max-height: 64px;}
+    .pseudo_ttl {text-align: center;}
+
+    span.campaign_name {padding-top: 16px;}
+}
+
+@media screen and (max-width: 767px){
+    .campaigns_holder {width: 98%; padding-bottom: 50px;}
+    .pseudo_ttl {display: none;}
+    .haulix_campaign {min-height: 275px; height: auto;}
+
+    span.campaign_name {padding-top: 1px;}
+
+    .haulix_campaign_box {padding-top: 0;}
+    span.campaign_lbl {width: 100%; margin-bottom: 20px;}
+    .campaign_name_holder {margin-bottom: 20px;}
+    .campaign_recipients_number_holder {margin-bottom: 20px;}
+    .sorting_buttons_holder {position: relative; top: 3px;}
+}
+
+@media screen and (max-width: 407px){
+    .sorting_buttons_holder {float: none; margin-top: 20px;}
+}
+
+
+
+
+
+
+
+
+
+/* --------- */
+
+
+
+
+
+
+/* ------ 'Promo Statistics' widget ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .promo_sorting {width: 19%;}
+    .searchbox input#promosearch {width: 59%;}
+    .searchbox .go_seacrh_icon {right: 40%;}
+
+    .promobox {margin-bottom: 20px; width: 23.5%;}
+    .promo_cover {height: 210px;}
+}
+
+
+@media screen and (max-width: 991px){
+    .promo_sorting {width: 22%;}
+    .searchbox input#promosearch {width: 69%;}
+    .searchbox .go_seacrh_icon {right: 29%;}
+    ul.alphabetic_sorter li {line-height: 45px;}
+
+    .promobox {width: 22.5%;}
+    .promo_cover {height: 155px;}
+}
+
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .searchbox .go_seacrh_icon {top: 0;}
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+    .searchbox .go_seacrh_icon {top: 0;}
+}
+
+
+@media screen and (max-width: 767px){
+    .promo_sorting {width: 25%;}
+    .promo_stats_holder {display: inline-block; width: 98%;}
+
+    .promobox {width: 31%;}
+    .promo_cover {height: 205px;}
+}
+
+@media screen and (max-width: 700px){
+    .promo_cover {height: 195px;}
+}
+
+@media screen and (max-width: 660px){
+    .promo_sorting {width: 28%;}
+    .promo_cover {height: 180px;}
+}
+
+@media screen and (max-width: 603px){
+    .promo_cover {height: 165px;}
+}
+
+@media screen and (max-width: 585px){
+    .promo_sorting {width: 35%; display: block; float: none;}
+
+    .promobox {width: 45%;}
+    .promo_cover {height: 230px;}
+}
+
+@media screen and (max-width: 555px){
+    .promo_cover {height: 210px;}
+}
+
+@media screen and (max-width: 520px){
+    .promo_cover {height: 195px;}
+}
+
+@media screen and (max-width: 495px){
+    .promo_sorting {width: 45%;}
+
+    .promobox {width: 95%;}
+    .promo_cover {height: 385px;}
+}
+
+@media screen and (max-width: 455px){
+    .searchbox input#promosearch {width: 90%;}
+    .searchbox .go_seacrh_icon {right: 20px;}
+
+    .promo_cover {height: 365px;}
+}
+@media screen and (max-width: 440px){
+    .promo_cover {height: 350px;}
+}
+
+@media all and (device-width: 414px) and (device-height: 736px) and (orientation:portrait) {
+    .searchbox .go_seacrh_icon {top: 0; right: 0;}
+}
+@media all and (device-width: 414px) and (device-height: 736px) and (orientation:landscape) {
+    .searchbox .go_seacrh_icon {top: 0; right: 0;}
+}
+
+@media screen and (max-width: 416px){
+    .promo_sorting {width: 55%;}
+
+    .promobox {width: 95%;}
+    .promo_cover {height: 325px;}
+}
+
+@media screen and (max-width: 390px){
+    .promo_cover {height: 290px;}
+}
+
+@media all and (device-width: 375px) and (device-height: 667px) and (orientation:portrait) {
+    .searchbox .go_seacrh_icon {top: 0; right: 0;}
+}
+@media all and (device-width: 375px) and (device-height: 667px) and (orientation:landscape) {
+    .searchbox .go_seacrh_icon {top: 0;}
+}
+
+@media screen and (max-width: 360px){
+    .promo_cover {height: 265px;}
+}
+
+@media screen and (max-width: 345px){
+    h4.widget_ttl.promo_stats_ttl {font-size: 1.2rem;}
+    .promo_sorting {width: 100%;}
+
+    .searchbox .go_seacrh_icon {right: 1%;}
+
+    .promo_cover {height: 245px;}
+}
+
+@media screen and (max-width: 325px){
+    h4.widget_ttl.promo_stats_ttl {font-size: 1.1rem;}
+    .promo_cover {height: 235px;}
+
+    .searchbox input#promosearch {width: 93%;}
+    .searchbox .go_seacrh_icon {right: 0;}
+}
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ PROMOS ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .promos_filter_buttons_holder {width: 48%;}
+    .promobox_inner {margin-bottom: 20px; width: 23.5%; padding-bottom: 20px;}
+
+    .separator_filter {top: -62px;}
+}
+
+@media screen and (max-width: 991px){
+    .promobox_inner {width: 22.5%;}
+
+    hr.promo_separator {width: 87%;}
+
+    .searchbox input#promosearch_inner {width: 100%; margin-bottom: 25px;}
+    .searchbox .go_seacrh_promos_icon {right: -4%;}
+    .promos_filter_buttons_holder {width: 100%;}
+
+    .promo_sorter_holder {width: 65%;}
+}
+
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .searchbox .go_seacrh_promos_icon {top: 0;}
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+    .searchbox .go_seacrh_promos_icon {top: 0;}
+}
+
+
+@media screen and (max-width: 767px){
+    .promos_midmain_holder {margin-top: 45px;}
+
+    .promos_search_area_holder {width: 62%;}
+
+    .promobox_inner {width: 31%;}
+}
+
+@media screen and (max-width: 720px){
+    .promo_sorter_holder {width: 75%;}
+}
+
+@media screen and (max-width: 690px){
+    hr.promo_separator {width: 86%;}
+}
+
+@media screen and (max-width: 625px){
+    .promos_search_area_holder {width: 77%;}
+    .promo_sorter_holder {width: 85%;}
+}
+
+@media screen and (max-width: 585px){
+    .promobox_inner {width: 45%;}
+    hr.promo_separator {width: 83%;}
+}
+
+@media screen and (max-width: 554px){
+    .promos_search_area_holder {width: 82%;}
+    .promo_sorter_holder {width: 92%;}
+}
+
+@media screen and (max-width: 515px){
+    .promo_sorter_holder {width: 100%;}
+    .promos_search_area_holder {width: 91%;}
+
+    hr.promo_separator {width: 81%;}
+}
+
+@media screen and (max-width: 495px){
+    .promobox_inner {width: 95%;}
+}
+
+@media screen and (max-width: 474px){
+    .promo_sorter_holder {margin-top: 65px;}
+}
+
+@media screen and (max-width: 440px){
+    hr.promo_separator {width: 77%;}
+}
+
+
+@media all and (device-width: 414px) and (device-height: 736px) and (orientation:portrait) {
+    .searchbox .go_seacrh_promos_icon {top: 0; right: -20px;}
+}
+@media all and (device-width: 414px) and (device-height: 736px) and (orientation:landscape) {
+    .searchbox .go_seacrh_promos_icon {top: 0; right: -20px;}
+}
+
+
+
+@media screen and (max-width: 416px){
+    .promobox_inner {width: 95%;}
+}
+
+@media screen and (max-width: 400px){
+    hr.promo_separator {width: 75%;}
+}
+
+
+@media all and (device-width: 375px) and (device-height: 667px) and (orientation:portrait) {
+    .searchbox .go_seacrh_promos_icon {top: 0; right: -20px;}
+}
+@media all and (device-width: 375px) and (device-height: 667px) and (orientation:landscape) {
+    .searchbox .go_seacrh_promos_icon {top: 0; right: -20px;}
+}
+
+
+@media screen and (max-width: 325px){
+    button.new_promo_btn {float: none; margin-bottom: 20px;}
+}
+
+
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ CAMPAIGNS ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .campaigns_edit_controls_holder {position: relative; top: -7px;}
+}
+
+@media screen and (max-width: 991px){
+    button.create_new_campaign_btn {width: 93%;}
+}
+
+@media screen and (max-width: 767px){
+    .campaigns_midmain_area {padding-left: 12px;}
+    .campaigns_midmain_holder {margin-top: 65px; width: 98%;}
+
+    button.create_new_campaign_btn {width: 40%;}
+
+    .campaigns_edit_controls_holder {margin-bottom: 20px; top: 0;}
+    a.campaign_control {margin-right: 20px; font-size: 2rem;}
+}
+
+@media screen and (max-width: 545px){
+    button.create_new_campaign_btn {width: 50%;}
+}
+
+@media screen and (max-width: 445px){
+    button.create_new_campaign_btn {width: 65%;}
+}
+
+@media screen and (max-width: 385px){
+    button.create_new_campaign_btn {width: 75%;}
+}
+
+@media screen and (max-width: 330px){
+    button.create_new_campaign_btn {width: 100%;}
+}
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ CREATE CAMPAIGN (STEP 2) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .promo_select_labels_holder {padding: 0; left: 14%;}
+    .promo_select_label {width: 24%;}
+}
+
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .searchbox .go_seacrh_promos_select_icon {top: 0;}
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+    .searchbox .go_seacrh_promos_select_icon {top: 0;}
+}
+
+
+@media screen and (max-width: 767px){
+    .five_step_progress_holder {width: 98%;}
+    .progress-indicator {margin-right: 12%;}
+
+    .create_new_campaign_midmain_holder {width: 98%;}
+
+    .select_promos_search_area_holder {width: 65%; margin-bottom: 25px;}
+    .promo_select_labels_holder {width: 80%; left: 2%;}
+}
+
+@media screen and (max-width: 650px){
+    .select_promos_search_area_holder {width: 85%;}
+    .promo_select_labels_holder {width: 90%; left: 2%;}
+}
+
+@media screen and (max-width: 560px){
+    .select_promos_search_area_holder {width: 95%;}
+    .promo_select_label {width: 30%;}
+}
+
+@media screen and (max-width: 460px){
+    .select_promos_search_area_holder {width: 98%;}
+    .promo_select_label {width: 30%;}
+
+    .promo_select_labels_holder {width: 98%;}
+    .promo_select_label {width: 98%;}
+
+    .select_promos_holder_inner {padding-top: 40px;}
+}
+
+@media screen and (max-width: 425px){
+    span.progress_indicator_step_ttl.current {font-size: 1.1rem;}
+}
+
+
+@media all and (device-width: 414px) and (device-height: 736px) and (orientation:portrait) {
+    .searchbox .go_seacrh_promos_select_icon {top: 0;}
+}
+@media all and (device-width: 414px) and (device-height: 736px) and (orientation:landscape) {
+    .searchbox .go_seacrh_promos_select_icon {top: 0;}
+}
+
+
+@media screen and (max-width: 390px){
+    .progress-indicator {margin-right: 2%;}
+    .searchbox .go_seacrh_promos_select_icon {right: -5%; margin-top: -1px;}
+}
+
+@media all and (device-width: 375px) and (device-height: 667px) and (orientation:portrait) {
+    .searchbox .go_seacrh_promos_select_icon {top: 0;}
+}
+@media all and (device-width: 375px) and (device-height: 667px) and (orientation:landscape) {
+    .searchbox .go_seacrh_promos_select_icon {top: 0;}
+}
+
+@media screen and (max-width: 320px){
+    .searchbox .go_seacrh_promos_select_icon {top: 0;}
+}
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ CREATE CAMPAIGN (STEP 3) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+
+@media screen and (max-width: 1199px){
+    .searchbox input#select_contacts_inner {width: 67%;}
+    .searchbox .go_seacrh_contacts_icon {right: 29%;}
+
+    .searchbox input#recipient_search {width: 67%;}
+
+    .incl_box {width: 100%;}
+
+    h4.rcp_ttl {width: 100%;}
+
+    button.rcp_include_btn {padding-left: 10px; padding-right: 10px;}
+    button.rcp_xclude_btn {padding-left: 10px; padding-right: 10px;}
+    button.rcp_xcluded_btn {padding-left: 7px; padding-right: 7px;}
+    button.rcp_included_btn {padding-left: 7px; padding-right: 7px;}
+}
+
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .searchbox .go_seacrh_contacts_icon {top: 0;}
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+    .searchbox .go_seacrh_contacts_icon {top: 0;}
+}
+
+
+
+@media screen and (max-width: 991px){
+    .progress-indicator {margin-right: 35%;}
+
+    .contact_search_holder {width: 80%; margin-bottom: 25px;}
+    .searchbox .go_seacrh_contacts_icon {right: 30%;}
+
+    .recipient_search_holder {width: 80%;}
+
+    h4.rcp_ttl {font-size: 1.3rem;}
+
+    button.rcp_include_btn {padding-left: 3px; padding-right: 3px;}
+    button.rcp_xclude_btn {padding-left: 3px; padding-right: 3px;}
+    button.rcp_xcluded_btn {padding-left: 3px; padding-right: 3px;}
+    button.rcp_included_btn {padding-left: 3px; padding-right: 3px;}
+
+    .rcp_btn_holder {padding-left: 10px;}
+    button.rcp_undo_btn {padding-left: 4px; padding-right: 4px;}
+}
+
+@media screen and (max-width: 767px){
+    button.rcp_include_btn {padding-left: 18px; padding-right: 18px;}
+    button.rcp_xclude_btn {padding-left: 18px; padding-right: 18px;}
+    button.rcp_xcluded_btn {padding-left: 10px; padding-right: 10px;}
+    button.rcp_included_btn {padding-left: 10px; padding-right: 10px;}
+
+    .rcp_btn_holder {padding-left: 1px;}
+    button.rcp_undo_btn {padding-left: 10px; padding-right: 10px;}
+
+    .recipient_box.included:before {
+        right: initial;
+        left: 48%;
+        bottom: -10px;
+        border-width: 10px 10px 0 10px;
+        border-color: #ee6a40 transparent transparent transparent;
+    }
+
+    .included_popup_box {position: relative;}
+    .included_popup {left: 0;}
+
+}
+
+@media screen and (max-width: 575px){
+    .progress-indicator {margin-right: 10%;}
+
+    .contact_search_holder {width: 100%; margin-bottom: 90px;}
+    .recipient_search_holder {width: 100%;}
+
+    button.rcp_include_btn {padding-left: 8px; padding-right: 8px;}
+    button.rcp_xclude_btn {padding-left: 8px; padding-right: 8px;}
+    button.rcp_xcluded_btn {padding-left: 4px; padding-right: 4px;}
+    button.rcp_included_btn {padding-left: 4px; padding-right: 4px;}
+
+    .rcp_btn_holder {padding-left: 10px;}
+    button.rcp_undo_btn {padding-left: 4px; padding-right: 4px;}
+}
+
+@media screen and (max-width: 450px){
+    .recipient_box {min-height: 185px; height: auto; padding-bottom: 20px;}
+
+    .rcp_ttl_holder {width: 100%;}
+    h4.rcp_ttl {margin-bottom: 16px;}
+
+    .rcp_group_number {padding-left: 0; width: 100%; margin-bottom: 16px;}
+
+    .rcp_btn_holder {width: 100%; padding-left: 0; margin-bottom: 16px;}
+
+    button.rcp_include_btn {padding-left: 25px; padding-right: 25px;}
+    button.rcp_xclude_btn {padding-left: 25px; padding-right: 25px;}
+    button.rcp_xcluded_btn {padding-left: 18px; padding-right: 18px;}
+    button.rcp_included_btn {padding-left: 18px; padding-right: 18px;}
+
+    .rcp_btn_holder {padding-left: 0;}
+    button.rcp_undo_btn {padding-left: 18px; padding-right: 18px;}
+}
+
+
+@media all and (device-width: 414px) and (device-height: 736px) and (orientation:portrait) {
+    .searchbox .go_seacrh_contacts_icon {top: 0;}
+}
+@media all and (device-width: 414px) and (device-height: 736px) and (orientation:landscape) {
+    .searchbox .go_seacrh_contacts_icon {top: 0;}
+}
+
+
+@media screen and (max-width: 400px){
+    .searchbox input#select_contacts_inner {width: 100%; margin-bottom: 5px;}
+    .searchbox .go_seacrh_contacts_icon {margin-top: -1px; right: -6%;}
+    button.include_contacts_btn {width: 105%;}
+
+    .searchbox input#recipient_search {width: 100%; margin-bottom: 5px;}
+    button.recipient_search_btn {width: 105%;}
+}
+
+
+@media all and (device-width: 375px) and (device-height: 667px) and (orientation:portrait) {
+    .searchbox .go_seacrh_contacts_icon {top: 0;}
+}
+@media all and (device-width: 375px) and (device-height: 667px) and (orientation:landscape) {
+    .searchbox .go_seacrh_contacts_icon {top: 0;}
+}
+
+
+@media screen and (max-width: 335px){
+    .progress-indicator {margin-right: 1%;}
+    .searchbox input#recipient_search {font-size: 1rem;}
+}
+
+@media screen and (max-width: 320px){
+    .searchbox .go_seacrh_contacts_icon {top: 0;}
+}
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ CREATE CAMPAIGN (STEP 4) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .darkblu_toolbar {width: 85%;}
+    .tab-content.image_n_colors_tab_content {width: 99%;}
+
+    .campaign_promo_cover {height: 115px;}
+}
+
+@media screen and (max-width: 991px){
+    button.preview_email_btn {width: 26%;}
+    button.save_draft_btn {width: 26%;}
+
+    .darkblu_toolbar {width: 100%;}
+
+    .nav-tabs.image_n_colors_tabs li a > i {font-size: 1.6rem;}
+    .nav-tabs.image_n_colors_tabs li a {font-size: 1.2rem;}
+
+    .tab-content.image_n_colors_tab_content {width: 99.5%;}
+    .campaign_promo_cover {width: 100%; height: 185px;}
+
+    .fontsize_selector_holder {width: 14%;}
+
+    .droppable_banner_info_holder h2 {font-size: 2.3rem;}
+    .droppable_banner_info_holder h4 {font-size: 1.7rem;}
+}
+
+@media screen and (max-width: 768px){
+    .tab-content.image_n_colors_tab_content {width: 99%;}
+}
+
+@media screen and (max-width: 767px){
+    .tab-content.image_n_colors_tab_content {width: 99.7%;}
+
+    .campaign_promo_cover {width: 47%; height: auto;}
+
+    a.showall_btn {right: 22px;}
+
+    #upload-file-container input {top: 115px; width: 83%;}
+}
+
+@media screen and (max-width: 525px){
+    ul.darkblu_toolbar_menu {margin-left: -25px;}
+
+    .draft_loader_selekta_holder {width: 40%;}
+}
+
+@media screen and (max-width: 515px){
+    ul.darkblu_toolbar_menu li {padding-right: 25px;}
+}
+
+@media screen and (max-width: 499px){
+    .campaign_promo_cover {width: 98%;}
+}
+
+@media screen and (max-width: 479px){
+    .droppable_banner_info_holder h2 {font-size: 2rem;}
+    .fontsize_selector_holder {width: 24%;}
+
+    .main_text_toolbox_group {margin-bottom: 8px;}
+}
+
+@media screen and (max-width: 460px){
+    .draft_loader_selekta_holder {width: 100%; margin-bottom: 5px;}
+
+    button.preview_email_btn {width: 29%;}
+    button.save_draft_btn {width: 29%; margin-left: 0;}
+}
+
+@media screen and (max-width: 436px){
+    ul.darkblu_toolbar_menu li {padding-right: 18px;}
+
+    button.preview_email_btn {width: 35%;}
+    button.save_draft_btn {width: 35%;}
+
+    .tab-content.image_n_colors_tab_content {width: 99.5%;}
+}
+
+@media screen and (max-width: 400px){
+    a.blu_toolbar_linx.solo_image {height: 18px; width: 22px;}
+    a.blu_toolbar_linx.solo_text {height: 18px; width: 22px;}
+    a.blu_toolbar_linx.solo_image_left_text {height: 18px; width: 34px;}
+    a.blu_toolbar_linx.solo_image_right_text {height: 18px; width: 34px;}
+    a.blu_toolbar_linx.h_letter {height: 18px; width: 22px;}
+    a.blu_toolbar_linx.minus {height: 18px; width: 22px;}
+
+    .droppable_banner_info_holder h2 {font-size: 1.7rem;}
+    .droppable_banner_info_holder h4 {font-size: 1.4rem;}
+
+    button.preview_email_btn {width: 40%;}
+    button.save_draft_btn {width: 40%;}
+}
+
+@media screen and (max-width: 372px){
+    .fontsize_selector_holder {width: 20%;}
+}
+
+@media screen and (max-width: 352px){
+    .fontsize_selector_holder {width: 40%;}
+}
+
+@media screen and (max-width: 340px){
+    ul.darkblu_toolbar_menu li {padding-right: 12px;}
+
+    button.preview_email_btn {width: 48%;}
+    button.save_draft_btn {width: 48%;}
+}
+
+@media screen and (max-width: 330px){
+    button.preview_email_btn {width: 44%;}
+    button.save_draft_btn {width: 35%;}
+}
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ CREATE CAMPAIGN (STEP 1) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    button.add_email_addrs_btn {width: 40%;}
+}
+
+@media screen and (max-width: 991px){
+    button.add_email_addrs_btn {width: 55%;}
+    .campaign_starter_next_button_holder {width: 40%;}
+}
+
+@media screen and (max-width: 700px){
+    button.add_email_addrs_btn {width: 60%;}
+}
+
+@media screen and (max-width: 650px){
+    input.campaign_starter_input_borderless_md {display: none;}
+    input.campaign_starter_input_borderless_xs {display: block; margin-top: 0; margin-bottom: 15px;}
+
+    .campaign_starter_fieldset {width: 100%;}
+
+    button.add_email_addrs_btn {width: 35%;}
+}
+
+@media screen and (max-width: 525px){
+    button.add_email_addrs_btn {width: 40%;}
+    .campaign_starter_next_button_holder {width: 50%;}
+}
+
+@media screen and (max-width: 470px){
+    button.add_email_addrs_btn {width: 50%;}
+    .campaign_starter_next_button_holder {width: 52%;}
+}
+
+@media screen and (max-width: 385px){
+    button.add_email_addrs_btn {width: 55%;}
+    .campaign_starter_next_button_holder {width: 55%;}
+}
+
+@media screen and (max-width: 355px){
+    button.add_email_addrs_btn {width: 60%;}
+    .campaign_starter_next_button_holder {width: 60%;}
+}
+
+@media screen and (max-width: 330px){
+    button.add_email_addrs_btn {width: 65%;}
+}
+
+
+
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ CREATE CAMPAIGN (STEP 5) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    button.send_da_test_btn {width: 26%;}
+
+    .scheduled_options_holder {right: 18%;}
+}
+
+@media screen and (max-width: 991px){
+    .campaign_test_sender_holder {width: 135%;}
+
+    .scheduled_options_holder {right: 10%;}
+}
+
+@media screen and (max-width: 767px){
+    .scheduled_options_holder {right: 0;}
+    .scheduled_options_holder {padding-top: 15px;}
+
+    button.send_da_test_btn {top: 23px;}
+
+    .final_buttons_holder {margin-top: 16%;}
+
+    button.finish_later_btn {margin-bottom: 8px; width: 65%;}
+    button.finish_now_btn {width: 65%;}
+}
+
+@media screen and (max-width: 685px){
+    .campaign_test_sender_holder {width: 165%;}
+}
+
+@media screen and (max-width: 575px){
+    .campaign_test_sender_holder {width: 190%;}
+}
+
+@media screen and (max-width: 499px){
+    .campaign_test_sender_holder {width: 100%;}
+    form.send_test {width: 100%}
+
+    .final_buttons_holder {margin-top: 18%;}
+
+    button.finish_later_btn {width: 75%;}
+    button.finish_now_btn {width: 75%;}
+}
+
+@media screen and (max-width: 468px){
+    .campaign_type_selekta_holder {padding-top: 65px;}
+
+    .test_send_fld_holder {width: 100%;}
+    button.send_da_test_btn {top: 5px; margin-left: 0; width: 33%;}
+}
+
+@media screen and (max-width: 430px){
+    .final_buttons_holder {margin-top: 45%;}
+
+    button.finish_later_btn {width: 85%;}
+    button.finish_now_btn {width: 85%;}
+
+    .date_n_time_holder {width: 100%; margin-bottom: 8px;}
+    .timezone_holder {width: 100%; margin-bottom: 8px;}
+
+    .freezer {height: 145px;}
+}
+
+@media screen and (max-width: 399px){
+    button.send_da_test_btn {width: 41%;}
+
+    .final_buttons_holder {margin-top: 50%;}
+
+    button.finish_later_btn {width: 90%;}
+    button.finish_now_btn {width: 90%;}
+}
+
+@media screen and (max-width: 370px){
+    .final_buttons_holder {margin-top: 55%;}
+
+    button.finish_later_btn {width: 93%;}
+    button.finish_now_btn {width: 93%;}
+}
+
+@media screen and (max-width: 350px){
+    .final_buttons_holder {margin-top: 59%;}
+
+    .final_buttons_holder {width: 75%;}
+    button.finish_later_btn {width: 98%;}
+    button.finish_now_btn {width: 98%;}
+}
+
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ CONTACTS (PAGE) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    button.new_contacts_btn {width: 55%; margin-bottom: 8px;}
+    button.new_groups_btn {width: 55%;}
+
+    button.contacts_aux_btn {width: 70%; margin-bottom: 8px; float: right;}
+
+    .searchbox input#contacts_search_inner {width: 100%;}
+    .searchbox .go_seacrh_contacts_icon_2 {right: 0;}
+}
+
+@media screen and (max-width: 991px){
+    button.new_contacts_btn {width: 65%;}
+    button.new_groups_btn {width: 65%;}
+
+    button.contacts_aux_btn {width: 72%;}
+
+    .contacts_search_area_holder {right: 8%;}
+}
+
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .searchbox .go_seacrh_contacts_icon_2 {top: 0; right: -40px;}
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+    .searchbox .go_seacrh_contacts_icon_2 {top: 0; right: -40px;}
+}
+
+
+@media screen and (max-width: 767px){
+    button.new_contacts_btn {width: 30%; margin-bottom: 12px;}
+    button.new_groups_btn {width: 30%;}
+
+    .contacts_search_area_holder {right: -2%; clear: both; width: 75%; margin-bottom: 12px;}
+
+    .contacts_aux_options_holder {float: none;}
+    button.contacts_aux_btn {float: none;}
+}
+
+@media screen and (max-width: 720px){
+    button.contacts_aux_btn {width: 90%;}
+}
+
+@media screen and (max-width: 603px){
+    .contacts_aux_options_holder {width: 45%;}
+}
+
+@media screen and (max-width: 599px){
+    .contacts_groups_subboxx {width: 100%;}
+    .actual_contacts_subboxx {width: 100%;}
+
+}
+
+
+
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ SETTINGS (General Information) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+
+@media screen and (max-width: 767px){
+    .settings_midmain_holder {width: 99%;}
+
+    fieldset.form_leftside {width: 99%;}
+    fieldset.form_riteside {width: 99%;}
+}
+
+@media screen and (max-width: 584px){
+    button.save_form_btn {width: 26%;}
+}
+
+@media screen and (max-width: 484px){
+    button.save_form_btn {width: 32%;}
+}
+
+@media screen and (max-width: 469px){
+    #date_format_radio_selectors small {float: none; margin-bottom: 8px;}
+}
+
+@media screen and (max-width: 416px){
+    button.save_form_btn {width: 36%;}
+}
+
+@media screen and (max-width: 350px){
+    button.save_form_btn {width: 40%;}
+}
+
+
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ SETTINGS (Extra User Account) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .xtra_permission {left: 10%}
+    .xtra_edit {left: 10%}
+    .xtra_delete {left: 10%}
+}
+
+@media screen and (max-width: 991px){
+    button.create_accnt_btn {width: 23%;}
+
+    .xtra_permission {left: 6%}
+    .xtra_edit {left: 6%}
+    .xtra_delete {left: 6%}
+}
+
+@media screen and (max-width: 767px){
+    .xtra_user_stripe {height: 95px; margin-bottom: 22px;}
+    .xtra_name {margin-bottom: 18px;}
+
+    .xtra_permission {left: 0;}
+    .xtra_edit {left: 0;}
+    .xtra_delete {left: 0;}
+}
+
+@media screen and (max-width: 702px){
+    button.create_accnt_btn {width: 26%;}
+
+    .xtra_permission {width: 55%;}
+}
+
+@media screen and (max-width: 620px){
+    button.create_accnt_btn {width: 30%;}
+}
+
+@media screen and (max-width: 540px){
+    button.create_accnt_btn {width: 35%;}
+}
+
+@media screen and (max-width: 480px){
+    button.create_accnt_btn {width: 39%;}
+}
+
+@media screen and (max-width: 430px){
+    button.create_accnt_btn {width: 50%;}
+}
+
+@media screen and (max-width: 360px){
+    .xtra_permission {width: 75%;}
+
+    button.create_accnt_btn {width: 56%;}
+}
+
+
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ SETTINGS (Reports) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .riteside_buttons_holder {padding-right: 0;}
+    button.generate_n_email_btn {float: right; margin-bottom: 5px; width: 65%;}
+
+    button.rprt_contacts_btn {width: 20%;}
+    button.rprt_myreports_btn {width: 20%;}
+    button.rprt_promoconsumption_btn {width: 30%;}
+}
+
+@media screen and (max-width: 991px){
+    button.generate_n_email_btn {width: 68%;}
+
+    button.rprt_contacts_btn {width: 24%;}
+    button.rprt_myreports_btn {width: 24%;}
+    button.rprt_promoconsumption_btn {width: 36%;}
+
+    h3.rprt_total_contacts {margin-bottom: 65px;}
+
+    .actual_promo_box {padding-left: 15px;}
+    .showme_promo_box {padding-left: 15px;}
+    .contacts_who_promo_box {padding-left: 15px;}
+    .contacts_who_promo_box_2 {
+        padding-left: 2px;
+        position: relative;
+        top: 25px;
+    }
+
+    label.report_n_lbl {position: relative; top: initial; left: initial;}
+}
+
+@media screen and (max-width: 767px){
+    button.generate_n_email_btn {width: 24%; clear: both; float: left;}
+
+    .leftside_buttons_holder {margin-bottom: 20px;}
+    .riteside_buttons_holder {padding-left: 16px;}
+
+    h3.rprt_total_contacts {margin-top: 100px; margin-bottom: 50px;}
+
+    .contacts_who_promo_box {width: 50%; float: left;}
+    .contacts_who_promo_box_2 {width: 50%; float: left; padding-left: 0;}
+
+    .report_stripe {height: 110px;}
+    .report_stripe_email {padding-left: 0;}
+}
+
+@media screen and (max-width: 690px){
+    button.generate_n_email_btn {width: 33%;}
+}
+
+@media screen and (max-width: 515px){
+    button.rprt_contacts_btn {width: 26%;}
+    button.rprt_myreports_btn {width: 26%;}
+    button.rprt_promoconsumption_btn {width: 39%;}
+
+    label.report_n_lbl {font-size: 1.222rem;}
+
+    .contacts_who_promo_box_2 {top: 24px;}
+}
+
+@media screen and (max-width: 500px){
+    button.rprt_contacts_btn {width: 50%; margin-bottom: 5px;}
+    button.rprt_myreports_btn {width: 50%; margin-bottom: 5px;}
+    button.rprt_promoconsumption_btn {width: 50%; margin-bottom: 5px;}
+
+    button.generate_n_email_btn {width: 50%;}
+}
+
+
+
+
+
+@media screen and (max-width: 380px){
+    button.rprt_contacts_btn {width: 60%;}
+    button.rprt_myreports_btn {width: 60%;}
+    button.rprt_promoconsumption_btn {width: 60%;}
+
+    button.generate_n_email_btn {width: 60%;}
+}
+
+@media screen and (max-width: 325px){
+    button.rprt_contacts_btn {width: 66%;}
+    button.rprt_myreports_btn {width: 66%;}
+    button.rprt_promoconsumption_btn {width: 66%;}
+
+    button.generate_n_email_btn {width: 66%;}
+}
+
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ SETTINGS (Plans) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .planbox {width: 15.3%;}
+    .planbox_header h3 {font-size: 1.6rem;}
+    .planbox_body p {font-size: 1.255rem;}
+}
+
+@media screen and (max-width: 991px){
+    .planbox {width: 31.6%;}
+
+    .planbox_body p {font-size: 1.4rem;}
+}
+
+@media screen and (max-width: 767px){
+    .planbox {width: 31%;}
+
+    .planbox_body p {font-size: 1.4rem;}
+}
+
+@media screen and (max-width: 750px){
+    label.my_sbsrptn {width: 33%;}
+}
+
+@media screen and (max-width: 640px){
+    .planbox {width: 30%;}
+    .planbox_header h3 {font-size: 1.6rem;}
+    .planbox_body p {font-size: 1.255rem;}
+}
+
+@media screen and (max-width: 580px){
+    h4.priceplan_info {font-size: 1.5rem;}
+
+    .planbox {width: 46%;}
+    .planbox_body p {font-size: 1.4rem;}
+}
+
+@media screen and (max-width: 510px){
+    h4.priceplan_info {font-size: 1.333rem;}
+    .planbox_body p {font-size: 1.3rem;}
+}
+
+@media screen and (max-width: 390px){
+    h4.priceplan_info {font-size: 1.5rem;}
+
+    .planbox {width: 99%;}
+    .planbox_body p {font-size: 1.4rem;}
+    .planbox_header h3 {font-size: 2rem;}
+}
+
+@media screen and (max-width: 470px){
+    label.my_sbsrptn {width: 45%;}
+    h4.priceplan_info {clear: both; margin-bottom: 8px;}
+    h4.priceplan_info.lxs {margin-bottom: 45px;}
+
+}
+
+@media screen and (max-width: 360px){
+    label.my_sbsrptn {width: 55%;}
+}
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ EDIT PROMO ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+
+/* block 1 */
+
+@media screen and (max-width: 991px){
+    .multibutton_holder {margin-bottom: 20px;}
+    .switch_holder {float: none; clear: both;}
+}
+
+@media screen and (max-width: 767px){
+    .promo_edit_box {width: 98%; margin-left: 6px;}
+
+    .promo_description_holder {margin-top: 1%;}
+
+    .main_text_toolbox_2 {margin-bottom: 60px;}
+
+    fieldset.form_leftside_promo {width: 100%;}
+    fieldset.form_riteside_promo {width: 100%;}
+
+    .drop_da_promo_image_holder {padding-left: 0;}
+}
+
+@media screen and (max-width: 715px){
+    button.multibutton {width: 8em; padding: 10px 16px 8px 16px;}
+}
+
+@media screen and (max-width: 610px){
+    button.multibutton {margin-right: 6px;}
+}
+
+@media screen and (max-width: 555px){
+    button.multibutton {clear: both; width: 14em; padding: 10px 24px 8px 24px; margin-bottom: 8px;}
+    button.cancel_btn {clear: both; float: left; padding-left: 0;}
+
+}
+
+
+
+/* block 2 */
+
+
+@media screen and (max-width: 1199px){
+    .promo_stream_n_download_options {padding-top: 50px;}
+}
+
+@media screen and (max-width: 991px){
+    .promo_stream_n_download_options {padding-top: 55px;}
+
+    .datepicker_formgroup_short {width: 70%;}
+}
+
+@media screen and (max-width: 767px){
+    .promo_stream_n_download_options {padding-top: 15px;}
+
+    #promo_dates {margin-bottom: 30px;}
+}
+
+
+
+
+
+/* block 3 */
+
+@media screen and (max-width: 991px){
+    .gal_cov_box {width: 26%;}
+
+    button.removepdf_btn {width: 18%;}
+
+    input.vindlinxinput {width: 65%;}
+    input.removepdfinput {width: 65%;}
+}
+
+@media screen and (max-width: 767px){
+    .drop_da_promo_image_holder_2 {width: 50%;}
+    .drop_da_promo_image_holder_dark {width: 50%;}
+}
+
+@media screen and (max-width: 630px){
+    .drop_da_promo_image_holder_2 {width: 80%;}
+    .drop_da_promo_image_holder_dark {width: 80%;}
+}
+
+@media screen and (max-width: 545px){
+    input.vindlinxinput {width: 100%;}
+    button.save_vidlinx_btn {margin-left: 0;}
+
+    input.removepdfinput {width: 100%;}
+    button.removepdf_btn {width: 35%;}
+
+    .gal_cov_box {width: 40%; margin-bottom: 16px;}
+}
+
+@media screen and (max-width: 400px){
+    .drop_da_promo_image_holder_2 {width: 100%;}
+    .drop_da_promo_image_holder_dark {width: 100%;}
+}
+
+
+
+
+
+/* block 4 */
+
+@media screen and (max-width: 1199px){
+    p.traxx_ttl {width: 60%;}
+    button.traxx_rmv_btn {padding-left: 31px; padding-right: 31px;}
+}
+
+@media screen and (max-width: 991px){
+    button.traxx_rmv_btn {padding-left: 11px; padding-right: 11px;}
+}
+
+@media screen and (max-width: 767px){
+    p.traxx_ttl {width: 77%;}
+    button.traxx_rmv_btn {padding-left: 24px; padding-right: 24px;}
+}
+
+@media screen and (max-width: 717px){
+    p.traxx_ttl {width: 74%;}
+}
+
+@media screen and (max-width: 667px){
+    p.traxx_ttl {width: 73%;}
+}
+
+@media screen and (max-width: 645px){
+    p.traxx_ttl {width: 72%;}
+    button.traxx_rmv_btn {padding-left: 22px; padding-right: 22px;}
+}
+
+@media screen and (max-width: 611px){
+    p.traxx_ttl {width: 70%;}
+}
+
+@media screen and (max-width: 575px){
+    p.traxx_ttl {width: 69%;}
+}
+
+@media screen and (max-width: 558px){
+    p.traxx_ttl {width: 67%;}
+}
+
+@media screen and (max-width: 530px){
+    span.rmv_btn_textpart {display: none;}
+    button.traxx_rmv_btn i {font-size: 2.2rem; top: 0; left: 4px;}
+    button.traxx_rmv_btn {padding-left: 5px; padding-right: 5px; width: 36px; border-radius: 100%;}
+    p.traxx_ttl {width: 82%; margin-right: 12px;}
+}
+
+@media screen and (max-width: 504px){
+    p.traxx_ttl {width: 80%;}
+}
+
+@media screen and (max-width: 463px){
+    p.traxx_ttl {width: 78%;}
+}
+
+@media screen and (max-width: 427px){
+    p.traxx_ttl {width: 76%;}
+}
+
+@media screen and (max-width: 398px){
+    p.traxx_ttl {width: 75%;}
+}
+
+@media screen and (max-width: 385px){
+    p.traxx_ttl {width: 73%;}
+}
+
+@media screen and (max-width: 363px){
+    p.traxx_ttl {width: 71%;}
+}
+
+@media screen and (max-width: 344px) {
+    button.traxx_rmv_btn {height: 24px; width: 24px; top: -4px;}
+    button.traxx_rmv_btn i {font-size: 1.6rem; top: -2px; left: 0;}
+
+    p.traxx_ttl {width: 74%;}
+}
+
+@media screen and (max-width: 326px){
+    p.traxx_ttl {width: 72%;}
+}
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ ANTI-PIRACY (Add Release) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .ap_info_stripe p {margin-left: 30px;}
+}
+
+@media screen and (max-width: 991px){
+    .howitworxx_holder {padding-top: 15px;}
+}
+
+@media screen and (max-width: 767px){
+    .antipiracy_block {display: inline-block; width: 98%; margin-left: 8px;}
+    .howitworxx_holder {padding-top: 0; margin-bottom: 34px;}
+}
+
+@media screen and (max-width: 620px){
+    .antipiracy_block {width: 97%;}
+
+    fieldset.ap_release_fldst_leftside {width: 100%;}
+    fieldset.ap_release_fldst_riteside {width: 100%; padding-left: 0;}
+}
+
+@media screen and (max-width: 543px){
+    .nav-tabs.ap_tabs_nav {padding-top: 30px;}
+    .nav-tabs.ap_tabs_nav li a {margin-bottom: 12px; width: 15em;}
+}
+
+@media screen and (max-width: 435px){
+    .antipiracy_block {width: 96%;}
+}
+
+@media screen and (max-width: 355px){
+    button.ap_save_n_finish {width: 100%; margin-bottom: 8px;}
+    button.ap_confirm_n_submit {width: 100%;}
+}
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ CONTACT IMPORT ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 991px){
+    .drag_upload_contacts {width: 45%;}
+}
+
+@media screen and (max-width: 767px){
+    .contact_import_holder {width: 97%; margin-left: 8px;}
+
+    .cntct_imprt_tbl_holder {padding-left: 0; margin-left: 20px; width: 98%;}
+}
+
+@media screen and (max-width: 665px){
+    p.cntct_imprt_info {width: 80%;}
+}
+
+@media screen and (max-width: 604px){
+    .drag_upload_contacts {width: 62%;}
+}
+
+@media screen and (max-width: 535px){
+    p.cntct_imprt_info {width: 98%;}
+}
+
+@media screen and (max-width: 495px){
+    .drag_upload_contacts {width: 75%;}
+}
+
+@media screen and (max-width: 415px){
+    .drag_upload_contacts {width: 85%;}
+    .contact_import_holder {width: 95%;}
+}
+
+@media screen and (max-width: 360px){
+    .drag_upload_contacts {width: 95%;}
+}
+
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ CAMPAIGN DETAILS ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .cmpgn_dtlz_donut_holder {padding-left: 8px;}
+}
+
+@media screen and (max-width: 991px){
+    .cmpgn_dtlz_counter h4 span {font-size: 1.7rem;}
+    .cmpgn_dtlz_counter h4 {font-size: 1.3rem;}
+
+    .cmpgn_dtlz_counter {padding-left: 40px;}
+
+    .cmpgn_dtlz_counter a {font-size: 1.1rem; padding-left: 0; line-height: 2.3; display: block; width: 121%;}
+
+    .cmpgn_dtlz_chart_data_holder {margin-bottom: 10%;}
+
+    .cmpgn_dtlz_progress_holder_2 h4 {font-size: 1.2rem; font-weight: 600;}
+
+    .rcpline_statuses p {font-size: 1rem; font-weight: 700; padding-top: 3px;}
+}
+
+@media screen and (max-width: 767px){
+    .campaign_details_midmain_holder {width: 98%;}
+
+    .cmpgn_dtlz_subttl_holder {display: inline-block;}
+
+    .releasebox {margin-bottom: 25px; width: 28%;}
+    .cmpgn_dtlz_progress_holder_1, .cmpgn_dtlz_progress_holder_2, .cmpgn_dtlz_progress_holder_3 {padding-left: 0;}
+    .cmpgn_dtlz_progress_holder_1 {margin-bottom: 30px; width: 70%;}
+    .cmpgn_dtlz_progress_holder_3 {width: 70%;}
+    .cmpgn_dtlz_progress_holder_2 h4 {text-align: left; font-size: 1.4rem; font-weight: 400;}
+
+    .cmpgn_dtlz_rcpline {height: 150px;}
+    .rcpline_recordlabel {clear: both; margin-bottom: 25px;}
+    .rcpline_statuses {float: left;}
+    .rcpline_statuses p {font-size: 1.2rem; font-weight: 400;}
+}
+
+@media screen and (max-width: 699px){
+    .cmpgn_dtlz_donut_holder {width: 100%;}
+    .cmpgn_dtlz_counter {width: 100%;}
+
+    .cmpgn_dtlz_counter h4 span {font-size: 2.2rem;}
+    .cmpgn_dtlz_counter h4 {font-size: 1.7rem;}
+    .cmpgn_dtlz_counter a {font-size: 1.3rem; padding-left: 22px;}
+}
+
+@media screen and (max-width: 604px){
+    .releasebox {width: 38%;}
+}
+
+@media screen and (max-width: 566px){
+    .cmpgn_dtlz_option_buttons_holder {float: left !important; padding-top: 25px;}
+}
+
+@media screen and (max-width: 515px){
+    .releasebox {width: 50%;}
+
+    .cmpgn_dtlz_counter h4 span {font-size: 1.7rem;}
+    .cmpgn_dtlz_counter h4 {font-size: 1.3rem;}
+}
+
+@media screen and (max-width: 376px){
+    .releasebox {width: 60%;}
+}
+@media screen and (max-width: 345px){
+    .releasebox {width: 66%;}
+    .rcpline_statuses p {font-size: 1.1rem;}
+}
+@media screen and (max-width: 325px){
+    .releasebox {width: 71%;}
+}
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ PROMO DESIGNER ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    span.playlist_track_ttl {width: 78%;}
+    h6.horiz_ttl {font-size: 1.1rem;}
+
+    button.new_promodesign_btn {width: 85%;}
+}
+
+@media screen and (max-width: 991px){
+    span.playlist_track_ttl {width: 71%; font-size: 1.3rem;}
+    input.colorinput_horiz {width: 70%; font-size: 1.3rem;}
+
+    #promodesigner_banner_uploader h2 {font-size: 2.5rem;}
+
+    button.new_promodesign_btn {width: 100%;}
+}
+
+@media screen and (max-width: 767px){
+    button.new_promodesign_btn {width: 35%;}
+    input.colorinput_horiz {width: 80%;}
+}
+
+@media screen and (max-width: 670px){
+    button.new_promodesign_btn {width: 45%;}
+}
+
+@media screen and (max-width: 545px){
+    button.new_promodesign_btn {width: 55%;}
+}
+
+@media screen and (max-width: 475px){
+    .horizontal_colorpicker {margin-bottom: 35px;}
+    h6.horiz_ttl {float: none; clear: both; margin-bottom: 0; font-size: 1.3rem;}
+    input.colorinput_horiz {float: none;}
+}
+
+@media screen and (max-width: 455px){
+    button.new_promodesign_btn {width: 65%;}
+    #promodesigner_banner_uploader h2 {font-size: 2.3rem;}
+    #promodesigner_banner_uploader h4 {font-size: 1.7rem;}
+
+    #promodesigner_banner_uploader {padding-top: 25px;}
+}
+
+@media screen and (max-width: 396px){
+    button.new_promodesign_btn {width: 75%;}
+}
+
+@media screen and (max-width: 375px){
+    #promodesigner_banner_uploader h2 {font-size: 2.1rem;}
+}
+
+@media screen and (max-width: 335px){
+    button.new_promodesign_btn {width: 85%;}
+    #promodesigner_banner_uploader h2 {font-size: 2rem;}
+}
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ CONTACT REGISTRATION SETUP ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+
+
+
+
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ PROMO LIST (Promo Edit 3) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    .promo_details_summary_boxxy {margin-right: 13px;}
+    .promo_details_summary_boxxy p {font-size: 1.2rem;}
+    .promo_details_summary_boxxy span {font-size: 1.1rem;}
+
+    p.promo_status_info_2 {clear: both; font-size: 1.3rem;}
+
+    .promolist_info_summary_line {padding-right: 70px;}
+}
+
+@media screen and (max-width: 991px){
+    .promolist_cover {width: 120px; height: 120px;}
+    .promo_details_summary_boxxy {margin-bottom: 18px;}
+
+    .promolist_info_summary_line {padding-right: 3px;}
+}
+
+@media screen and (max-width: 767px){
+    .promolist_leftside_holder {max-height: 350px; margin-bottom: 25px;}
+
+    .promolist_cover {width: 320px; height: 320px;}
+    .promolist_info {padding-left: 0;}
+    .promolist_cover_box {padding-left: 0; margin-bottom: 30px;}
+
+    .promo_details_summary_boxxy p {font-size: 1.474rem;}
+    .promo_details_summary_boxxy span {font-size: 1.4rem;}
+
+    .promo_details_summary_boxxy {margin-right: 40px;}
+
+    .promolist_info_summary_line {padding-right: 270px;}
+}
+
+@media screen and (max-width: 639px){
+    .promo_details_summary_boxxy {margin-right: 25px;}
+}
+
+@media screen and (max-width: 575px){
+    .promolist_info_summary_line {padding-right: 170px;}
+}
+
+@media screen and (max-width: 556px){
+    .promo_details_summary_boxxy p {font-size: 1.3rem;}
+    .promo_details_summary_boxxy span {font-size: 1.3rem;}
+}
+
+@media screen and (max-width: 528px){
+    .promo_details_summary_boxxy {margin-right: 18px;}
+
+    .promo_details_summary_boxxy p {font-size: 1.222rem;}
+    .promo_details_summary_boxxy span {font-size: 1.222rem;}
+}
+
+@media screen and (max-width: 474px){
+    .promo_details_summary_boxxy {margin-right: 15px;}
+
+    .promo_details_summary_boxxy p {font-size: 1.2rem;}
+    .promo_details_summary_boxxy span {font-size: 1.2rem;}
+
+    .promolist_info_summary_line {padding-right: 90px;}
+}
+
+@media screen and (max-width: 454px){
+    .promo_details_summary_boxxy {margin-right: 12px;}
+
+    .promo_details_summary_boxxy p {font-size: 1.1rem;}
+    .promo_details_summary_boxxy span {font-size: 1.1rem;}
+}
+
+@media screen and (max-width: 430px){
+    .promolist_info_summary_line {padding-right: 30px;}
+}
+
+@media screen and (max-width: 416px){
+    .promolist_cover {width: 224px; height: 224px;}
+
+    .promo_details_summary_boxxy {margin-right: 45px;}
+
+    .promo_details_summary_boxxy p {font-size: 1.2rem;}
+    .promo_details_summary_boxxy span {font-size: 1.2rem;}
+}
+
+@media screen and (max-width: 383px){
+    .promolist_cover {width: 212px; height: 212px;}
+
+    .promo_details_summary_boxxy {margin-right: 35px;}
+
+    .promolist_info_summary_line {padding-right: 3px;}
+
+    p.promo_status_info {font-size: 1.4rem;}
+}
+
+@media screen and (max-width: 353px){
+    .promo_details_summary_boxxy {margin-right: 27px;}
+}
+
+@media screen and (max-width: 338px){
+    .promolist_info_summary_line p {font-size: 1.2rem;}
+    .promolist_info_summary_line small {font-size: 1rem;}
+
+    .promolist_traxbox p {font-size: 1.2rem; line-height: 2.8;}
+
+    .promolist_detailed_description p {font-size: 1.3rem;}
+}
+
+@media screen and (max-width: 328px){
+    .promo_details_summary_boxxy {margin-right: 19px;}
+}
+
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ ANTI-PIRACY (My Takedowns Tab) ------ */
+
+/* >>>>> LG/XL <<<<<< */
+
+
+
+
+/* >>>>> SM/XS <<<<<< */
+@media screen and (max-width: 1199px){
+    button.add_illegallinxx_btn {position: relative; right: 24px;}
+
+    .takedownrelease_detailz h2 {font-size: 1.6rem;}
+    .takedownrelease_detailz h4 {font-size: 1.3rem;}
+    .takedownrelease_detailz p {font-size: 1.2rem;}
+}
+
+@media screen and (max-width: 767px){
+    .antipiracy_block_2 {margin-left: 8px; width: 98%;}
+}
+
+@media screen and (max-width: 630px){
+    button.add_illegallinxx_btn {right: 30px;}
+}
+
+@media screen and (max-width: 612px){
+    .links_removed_ttl {clear: both; padding-left: 0;}
+    .add_illegallinxx_holder {clear: both;}
+
+}

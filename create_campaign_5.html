@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Haulix (App)</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap & Custom Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/yobni.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+    <link href="css/jquery.ui.timepicker.css" rel="stylesheet">
+    <link href="css/haulix.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <nav class="navbar navbar-default haulix_navbar">
+        <div class="container">
+            <!-- Toggler -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#haulixnav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo_4_app.png" class="img-responsive logo_4_app"> </a>
+            </div>
+
+            <!-- Collect sh*t-->
+            <div class="collapse navbar-collapse" id="haulixnav">
+                <ul class="nav navbar-nav navbar-right haulix_main_menu">
+                    <li><a href="dashboard.html"><span class="button_icon dashboard"></span>Dashboard</a></li>
+                    <li><a href="promos.html"><span class="button_icon promos"></span>Promos</a></li>
+                    <li><a href="contacts.html"><span class="button_icon contacts"></span>Contacts</a></li>
+                    <li class="active"><a href="campaigns.html"><span class="button_icon campaigns"></span>Campaigns</a></li>
+                    <li><a href="anti_piracy.html"><span class="button_icon antipiracy"></span>Anti-Piracy</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="button_icon settings"></span>Settings</a>
+                        <ul class="dropdown-menu haulix_main_submenu">
+                            <li><a href="settings_general_info.html"><i class="fa fa-info-circle"></i>General Information</a></li>
+                            <li><a href="plan_info.html"><i class="fa fa-calendar"></i>Plan Information</a></li>
+                            <li><a href="payment_setup.html"><i class="fa fa-credit-card"></i>Payment Setup</a></li>
+                            <li><a href="extra_user_accounts.html"><i class="fa fa-user"></i>Extra User Accounts</a></li>
+                            <li><a href="reports.html"><i class="fa fa-file-text"></i>Reports</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Navbar END -->
+
+    <div class="campaigns_midmain_area">
+        <div class="container">
+            <div class="row">
+                <section class="user_greeting_box pull-right">
+                    <h3>Hi, <span id="user_name">Kelly</span></h3>
+                    <span class="user_thumb user_001"></span>
+                    <span class="notification_box"><a href="#"><i class="fa fa-bell-o fa-2x"></i></a>
+                        <span id="notification_nr" class="notification_number animated flipInY">661</span>
+                    </span>
+                </section>
+                <div class="clearfix"></div>
+                <section class="col-sm-5 pull-left dashboard_info_box">
+                    <h2>Create Campaign</h2>
+                    <p>Start a new campaign</p>
+                </section>
+                <section class="col-sm-5 pull-right dashboard_info_box_rite">
+                    <p>Last updated <span id="update_date">Today</span> at <span id="update_time">12:30PM</span></p>
+                    <section class="pull-right refresh_button_box">
+                        <a href="javascript:void(0)"><i class="fa fa-refresh fa-2x hvr-shrink"></i> </a>
+                        <small>Refresh</small>
+                    </section>
+                </section>
+
+                <div class="five_step_progress_holder col-sm-12">
+                    <ul class="progress-indicator">
+                        <li class="completed"><span class="bubble"><span class="progress_indicator_step_ttl">Start</span></span></li>
+                        <li class="completed"><span class="bubble"><span class="progress_indicator_step_ttl">Promos</span></span></li>
+                        <li class="completed"><span class="bubble"><span class="progress_indicator_step_ttl">Recipients</span></span> </li>
+                        <li class="completed"><span class="bubble"><span class="progress_indicator_step_ttl">Content & Design</span></span> </li>
+                        <li class="current"><span class="bubble"><span class="progress_indicator_step_ttl current">Finish</span></span> </li>
+                    </ul>
+                </div>
+
+                <div class="create_new_campaign_midmain_holder col-sm-12">
+                    <section class="select_promos_pagination_holder pull-right">
+                        <nav>
+                            <ul class="pagination campaigns_pagination">
+                                <li>
+                                    <a href="javascript:void(0)" aria-label="Previous">
+                                        <span aria-hidden="true">Previous</span>
+                                    </a>
+                                </li>
+                                <li><a href="javascript:void(0)">1</a></li>
+                                <li><a href="javascript:void(0)">2</a></li>
+                                <li><a href="javascript:void(0)">3</a></li>
+                                <li><a href="javascript:void(0)">4</a></li>
+                                <li><a href="javascript:void(0)" class="active">5</a></li>
+                                <li>
+                                    <!--<a href="javascript:void(0)" aria-label="Next">-->
+                                        <!--<span aria-hidden="true">Next</span>-->
+                                    <!--</a>-->
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <div class="campaign_type_selekta_holder">
+                        <h5>Send a test</h5>
+                        <section class="campaign_test_sender_holder">
+                            <form id="send_test" class="send_test">
+                                <section class="test_send_fld_holder pull-left">
+                                    <label for="test_send_fld" class="campaign_starter_lbl">Separate multiple addresses with a coma</label>
+                                    <select id="test_send_fld"></select>
+                                </section>
+                                <button type="submit" class="btn btn-default send_da_test_btn">Send Test <i class="fa fa-paper-plane"></i> </button>
+                            </form>
+                        </section>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-6 send_options_radio_holder">
+                        <form id="send_options_radio_selectors">
+                            <h5>Send Options</h5>
+
+                            <input class="z2" type="radio" name="radio-group" id="sendnow" value="Send Now" checked="checked"/>
+                            <label for="sendnow" class="camp_lbl">Send Now</label>
+                            <input class="z2" type="radio" name="radio-group" id="sendlater" value="Schedule Send" />
+                            <label id="zzz" for="sendlater" class="camp_lbl">Schedule Send</label>
+                        </form>
+                    </div>
+                    <div class="col-sm-6 scheduled_options_holder">
+                        <div class="freezer"></div>
+
+                        <section class="date_n_time_holder">
+                            <span class="date_boxx_icon"></span>
+                            <input id="datepicker" class="date_boxx">
+                        </section>
+
+                        <section class="date_n_time_holder">
+                            <span class="time_boxx_icon"></span>
+                            <input id="timepicker" class="time_boxx">
+                        </section>
+
+                        <section class="timezone_holder">
+                            <select id="timezone_selekta">
+                                <option>(UTC-06:00) Central Time (US & Canada)</option>
+                                <option>(UTC-07:00) Central Time (MTZ)</option>
+                                <option>(UTC-05:00) Central Time (MTZ)</option>
+                            </select>
+                        </section>
+                    </div>
+
+                    <div class="final_buttons_holder center-block">
+                        <button class="btn btn-default finish_later_btn">Save and Finish Later</button>
+                        <button class="btn btn-default finish_now_btn">Finish Now</button>
+                    </div>
+
+
+                </div>
+            </div> <!-- Main Row END -->
+        </div>
+    </div>
+
+
+</div> <!-- Main -->
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+    $(function() {
+        $( "#datepicker" ).datepicker();
+    });
+
+</script>
+
+<!-- JS Files -->
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/donutcharts.js"></script>-->
+<script src="js/select2.full.js"></script>
+<script type="text/javascript">
+
+    $('#test_send_fld').select2({
+        width: '99%',
+        minimumResultsForSearch: -1
+    });
+
+    $('#timezone_selekta').select2({
+        width: '95%'
+    });
+
+
+</script>
+<script src="js/jquery.ui.timepicker.js"></script>
+<script src="js/jquery.ui.core.min.js"></script>
+<script type="text/javascript">
+
+    $('#timepicker').timepicker();
+
+</script>
+<script src="js/haulix.js"></script>
+</body>
+</html>

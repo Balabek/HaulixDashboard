@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Haulix (App)</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap & Custom Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+    <link href="css/bootstrap-tagsinput.css" rel="stylesheet">
+    <link href="css/haulix.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <nav class="navbar navbar-default haulix_navbar">
+        <div class="container">
+            <!-- Toggler -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#haulixnav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo_4_app.png" class="img-responsive logo_4_app"> </a>
+            </div>
+
+            <!-- Collect sh*t-->
+            <div class="collapse navbar-collapse" id="haulixnav">
+                <ul class="nav navbar-nav navbar-right haulix_main_menu">
+                    <li><a href="dashboard.html"><span class="button_icon dashboard"></span>Dashboard</a></li>
+                    <li><a href="promos.html"><span class="button_icon promos"></span>Promos</a></li>
+                    <li><a href="contacts.html"><span class="button_icon contacts"></span>Contacts</a></li>
+                    <li><a href="campaigns.html"><span class="button_icon campaigns"></span>Campaigns</a></li>
+                    <li class="active"><a href="anti_piracy.html"><span class="button_icon antipiracy"></span>Anti-Piracy</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="button_icon settings"></span>Settings</a>
+                        <ul class="dropdown-menu haulix_main_submenu">
+                            <li><a href="settings_general_info.html"><i class="fa fa-info-circle"></i>General Information</a></li>
+                            <li><a href="plan_info.html"><i class="fa fa-calendar"></i>Plan Information</a></li>
+                            <li><a href="payment_setup.html"><i class="fa fa-credit-card"></i>Payment Setup</a></li>
+                            <li><a href="extra_user_accounts.html"><i class="fa fa-user"></i>Extra User Accounts</a></li>
+                            <li><a href="reports.html"><i class="fa fa-file-text"></i>Reports</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Navbar END -->
+
+    <div class="promos_midmain_area">
+        <div class="container">
+            <div class="row">
+                <section class="user_greeting_box pull-right">
+                    <h3>Hi, <span id="user_name">Kelly</span></h3>
+                    <span class="user_thumb user_001"></span>
+                    <span class="notification_box"><a href="#"><i class="fa fa-bell-o fa-2x"></i></a>
+                        <span id="notification_nr" class="notification_number animated flipInY">5</span>
+                    </span>
+                </section>
+                <div class="clearfix"></div>
+                <section class="col-sm-5 pull-left dashboard_info_box">
+                    <h2>Anti-Piracy</h2>
+                    <p>Fill in the fields</p>
+                </section>
+                <section class="col-sm-5 pull-right dashboard_info_box_rite">
+                    <p>Last updated <span id="update_date">Today</span> at <span id="update_time">12:43AM</span></p>
+                    <section class="pull-right refresh_button_box">
+                        <a href="javascript:void(0)"><i class="fa fa-refresh fa-2x hvr-shrink"></i> </a>
+                        <small>Refresh</small>
+                    </section>
+                </section>
+
+                <div class="clearfix"></div>
+
+                <section class="ap_tabs_holder">
+                    <ul class="nav nav-tabs ap_tabs_nav" role="tablist">
+                        <li role="presentation" class="active"><a href="#addRelease" class="btn ap_tab" aria-controls="add_release" role="tab" data-toggle="tab">Add Release</a></li>
+                        <li role="presentation"><a href="#myTakedowns" class="btn ap_tab" aria-controls="my_takedowns" role="tab" data-toggle="tab">My Takedowns</a></li>
+                    </ul>
+                </section>
+
+                <div class="tab-content ap_tabular_midmain">
+                    <div role="tabpanel" class="tab-pane active" id="addRelease">
+                        <div class="col-sm-12 antipiracy_block">
+                            <section class="col-sm-9 well ap_info_stripe">
+                                <span class="infosign"></span>
+                                <p>Before submitting an album, confirm that none of the track titles have any special characters *|,\’<>[]{}`/;()$#%.</p>
+                            </section>
+                            <section class="col-sm-3 howitworxx_holder">
+                                <a href="#" class="btn btn-link howitworxx_link_btn">How does this work?</a>
+                            </section>
+                            <form id="ap_add_rls" class="add_release_form" role="form">
+                                <fieldset class="ap_release_fldst_leftside">
+                                    <div class="form-group ap_form_grp">
+                                        <label for="ap_add_release" class="ap_form_lbl">Add Release</label>
+                                        <select id="ap_add_release">
+                                            <option></option>
+                                            <option>DJ Krush - "Butterfly Effect"</option>
+                                            <option>Vanilla Ace - "California"</option>
+                                            <option>Nas - "Hip-Hop is Dead"</option>
+                                            <option>Fabien Kamb - "Miles Ahead"</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group ap_form_grp">
+                                        <label for="ap_artist" class="ap_form_lbl">Artist</label>
+                                        <input id="ap_artist" class="ap_form_input">
+                                    </div>
+                                    <div class="form-group ap_form_grp">
+                                        <label for="ap_alnum_ttl" class="ap_form_lbl">Album Title</label>
+                                        <input id="ap_alnum_ttl" class="ap_form_input">
+                                    </div>
+                                    <div class="form-group ap_form_grp">
+                                        <label for="ap_traxxx" class="ap_form_lbl">Tracks</label>
+                                        <input id="ap_traxxx" class="ap_form_input" value="track01.mp3">
+                                        <button class="btn ap_add_traxx"><i class="fa fa-plus-circle"></i>Add Track</button>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="ap_release_fldst_riteside">
+                                    <div class="form-group ap_form_grp">
+                                        <label for="ap_recordlabel" class="ap_form_lbl">Record Label</label>
+                                        <input id="ap_recordlabel" class="ap_form_input">
+                                    </div>
+                                    <div class="form-group datepicker_formgroup_ap">
+                                        <label for="ap_releasedate" class="ap_form_lbl">Release Date</label>
+                                        <span class="date_boxx_icon_ap"></span>
+                                        <input id="ap_releasedate" class="ap_form_input">
+                                    </div>
+                                    <div class="form-group ap_form_grp">
+                                        <label for="ap_purchase_url" class="ap_form_lbl">Purchase URL</label>
+                                        <input id="ap_purchase_url" class="ap_form_input">
+                                        <small class="purchase_url_info">
+                                            Where release can be purchased online (include http:// or https://).
+                                            If not available for sale yet, can be your Bancamp artist page, your website, etc.
+                                        </small>
+                                    </div>
+                                    <div class="coverart_uploader">
+                                        <p>Cover Art (.PNG, .JPG or .GIF)</p>
+                                        <div class="ap_fileinputs">
+                                            <input type="file" class="ap_file" />
+                                            <div class="ap_fakefile">
+                                                <input type="button" value="Browse..." />
+                                                <small id="chosen_file_identifier" class="browse_file_status_info">No file selected</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <section class="ap_two_button_holder">
+                                <button class="btn ap_save_n_finish">Save and Finish Later</button>
+                                <button class="btn ap_confirm_n_submit">Confirm & Submit</button>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="myTakedowns">
+                        <div class="col-sm-12 antipiracy_block_2">
+                            <section class="alphabetic_sorting_holder">
+                                <h4>Choose Takedowns whose artist begins with the following characters:</h4>
+                                <ul class="alphabetic_sorter">
+                                    <li><a href="javascript:void(0)">[A .. C]</a><span class="alphabetic_counter empty">0</span> </li>
+                                    <li><a href="javascript:void(0)">[D .. F]</a><span class="alphabetic_counter">18</span> </li>
+                                    <li><a href="javascript:void(0)">[G .. I]</a><span class="alphabetic_counter">37</span> </li>
+                                    <li><a href="javascript:void(0)">[J .. L]</a><span class="alphabetic_counter empty">0</span> </li>
+                                    <li><a href="javascript:void(0)">[M .. O]</a><span class="alphabetic_counter">9</span> </li>
+                                    <li><a href="javascript:void(0)">[P .. R]</a><span class="alphabetic_counter empty">0</span> </li>
+                                    <li><a href="javascript:void(0)">[S .. T]</a><span class="alphabetic_counter">54</span> </li>
+                                    <li><a href="javascript:void(0)">[U .. W]</a><span class="alphabetic_counter">74</span> </li>
+                                    <li><a href="javascript:void(0)">[X .. Z]</a><span class="alphabetic_counter">4</span> </li>
+                                    <li><a href="javascript:void(0)">[0 .. 9]</a><span class="alphabetic_counter">26</span> </li>
+                                </ul>
+                            </section>
+                            <hr class="takedownseparator">
+                            <section class="col-md-4 col-sm-12 leftside_release_picker_holder">
+                                <h5>Click on a release to view the details</h5>
+                                <div class="release_picker_mainblock">
+                                    <div class="takedownbox">
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_cover">
+                                            <span style="background: url('http://redmp3.su/cover/1071400-460x460/the-coming-blue-haze-ep.jpg') center center no-repeat; background-size: cover;"></span>
+                                        </section>
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_detailz">
+                                            <h2>Salt Sweet</h2>
+                                            <h4>Blue Haze EP</h4>
+                                            <p>Low Flow Records</p>
+                                            <p>Release: 12.06.2009</p>
+                                        </section>
+                                    </div>
+                                    <div class="takedownbox selected_takedown">
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_cover">
+                                            <span style="background: url('http://www.residentadvisor.net/images/reviews/2015/wdwcd001-crazyp.jpg') center center no-repeat; background-size: cover;"></span>
+                                        </section>
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_detailz">
+                                            <h2>Crazy P</h2>
+                                            <h4>Walk Dance Talk Sing</h4>
+                                            <p>!K7</p>
+                                            <p>Release: 13.05.2015</p>
+                                        </section>
+                                    </div>
+                                    <div class="takedownbox">
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_cover">
+                                            <span style="background: url('https://upload.wikimedia.org/wikipedia/en/9/99/Joe-and_then.jpg') center center no-repeat; background-size: cover;"></span>
+                                        </section>
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_detailz">
+                                            <h2>Joe</h2>
+                                            <h4>And Then...</h4>
+                                            <p>Arista/BMG</p>
+                                            <p>Release: 22.11.2003</p>
+                                        </section>
+                                    </div>
+                                    <div class="takedownbox">
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_cover">
+                                            <span style="background: url('https://www.residentadvisor.net/images/reviews/2012/pschent-3248032.jpg') center center no-repeat; background-size: cover;"></span>
+                                        </section>
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_detailz">
+                                            <h2>Scratch Massive</h2>
+                                            <h4>Nuit De Reve</h4>
+                                            <p>Pschent</p>
+                                            <p>Release: 08.11.2011</p>
+                                        </section>
+                                    </div>
+                                    <div class="takedownbox">
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_cover">
+                                            <span style="background: url('https://upload.wikimedia.org/wikipedia/en/4/40/Def_Leppard_-_Hysteria_(vinyl_version).jpg') center center no-repeat; background-size: cover;"></span>
+                                        </section>
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_detailz">
+                                            <h2>Def Leppard</h2>
+                                            <h4>Hysteria</h4>
+                                            <p>Hell Knows</p>
+                                            <p>Release: 29.01.1979</p>
+                                        </section>
+                                    </div>
+                                    <div class="takedownbox">
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_cover">
+                                            <span style="background: url('http://ecx.images-amazon.com/images/I/61gZihpAwmL.jpg') center center no-repeat; background-size: cover;"></span>
+                                        </section>
+                                        <section class="col-sm-6 col-xs-6 takedownrelease_detailz">
+                                            <h2>Cypress Hill</h2>
+                                            <h4>IV</h4>
+                                            <p>Sony</p>
+                                            <p>Release: 06.11.1998</p>
+                                        </section>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-md-8 col-sm-12 riteside_takedown_stats_holder">
+                                <section class="col-sm-4 col-xs-4 links_removed_ttl">
+                                    <h2>35</h2>
+                                    <h3>Links Removed</h3>
+                                </section>
+                                <section class="col-sm-4 col-xs-4 links_removed_ttl">
+                                    <h2>7</h2>
+                                    <h3>Files Removed</h3>
+                                </section>
+                                <section class="col-sm-4 col-xs-4 add_illegallinxx_holder">
+                                    <button class="btn btn-link add_illegallinxx_btn"><i class="fa fa-plus-circle"></i>Add Illegal Link or Media URL</button>
+                                </section>
+                                <div class="clearfix"></div>
+                                <div class="takedown_stats_table_holder">
+                                    <section class="col-sm-6 col-xs-6 stat_headline">
+                                        <h4>Tracks</h4>
+                                    </section>
+                                    <section class="col-sm-2 col-xs-2 stat_headline">
+                                        <h4>In Process</h4>
+                                    </section>
+                                    <section class="col-sm-2 col-xs-2 stat_headline">
+                                        <h4>Links</h4>
+                                    </section>
+                                    <section class="col-sm-2 col-xs-2 stat_headline">
+                                        <h4>Files</h4>
+                                    </section>
+                                    <div class="clearfix"></div>
+                                    <section class="well takedown_statsline greystripe">
+                                        <section class="col-sm-6 col-xs-6 stat_track_ttl">
+                                            <p>The Pale Shades of Green</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>0</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>8</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>0</p>
+                                        </section>
+                                    </section>
+                                    <section class="well takedown_statsline whitestripe">
+                                        <section class="col-sm-6 col-xs-6 stat_track_ttl">
+                                            <p>Morning Glory (Ted Baker remix)</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>1</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>4</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>0</p>
+                                        </section>
+                                    </section>
+                                    <section class="well takedown_statsline greystripe">
+                                        <section class="col-sm-6 col-xs-6 stat_track_ttl">
+                                            <p>Bang It Right</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>4</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>16</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>0</p>
+                                        </section>
+                                    </section>
+                                    <section class="well takedown_statsline whitestripe">
+                                        <section class="col-sm-6 col-xs-6 stat_track_ttl">
+                                            <p>Moments In Time</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>2</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>2</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>1</p>
+                                        </section>
+                                    </section>
+                                    <section class="well takedown_statsline greystripe">
+                                        <section class="col-sm-6 col-xs-6 stat_track_ttl">
+                                            <p>Just Once (LP version)</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>18</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>4</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>0</p>
+                                        </section>
+                                    </section>
+                                    <section class="well takedown_statsline whitestripe">
+                                        <section class="col-sm-6 col-xs-6 stat_track_ttl">
+                                            <p>Time To Let It Go</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>5</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>2</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>1</p>
+                                        </section>
+                                    </section>
+                                    <section class="well takedown_statsline greystripe">
+                                        <section class="col-sm-6 col-xs-6 stat_track_ttl">
+                                            <p>Brazilian Thrill</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>2</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>2</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>5</p>
+                                        </section>
+                                    </section>
+                                    <section class="well takedown_statsline whitestripe">
+                                        <section class="col-sm-6 col-xs-6 stat_track_ttl">
+                                            <p>Hope Dies Last (DJ Kay Slay radio edit)</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>0</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>2</p>
+                                        </section>
+                                        <section class="col-sm-2 col-xs-2 stat_track_number">
+                                            <p>0</p>
+                                        </section>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Main Row END -->
+        </div>
+    </div>
+
+</div> <!-- Main END -->
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-tagsinput.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+    $(function() {
+        $( "#ap_releasedate").datepicker();
+    });
+
+</script>
+
+<!-- JS Files -->
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/donutcharts.js"></script>-->
+<script src="js/select2.full.js"></script>
+<script type="text/javascript">
+
+    $('#ap_add_release').select2({
+        width: '98%',
+        placeholder: "Select promo or add new",
+        minimumResultsForSearch: -1
+    });
+
+</script>
+<script src="js/haulix.js"></script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Haulix (App)</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap & Custom Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+    <link href="css/bootstrap-tagsinput.css" rel="stylesheet">
+    <link href="css/haulix.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <nav class="navbar navbar-default haulix_navbar">
+        <div class="container">
+            <!-- Toggler -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#haulixnav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo_4_app.png" class="img-responsive logo_4_app"> </a>
+            </div>
+
+            <!-- Collect sh*t-->
+            <div class="collapse navbar-collapse" id="haulixnav">
+                <ul class="nav navbar-nav navbar-right haulix_main_menu">
+                    <li><a href="dashboard.html"><span class="button_icon dashboard"></span>Dashboard</a></li>
+                    <li class="active"><a href="promos.html"><span class="button_icon promos"></span>Promos</a></li>
+                    <li><a href="contacts.html"><span class="button_icon contacts"></span>Contacts</a></li>
+                    <li><a href="campaigns.html"><span class="button_icon campaigns"></span>Campaigns</a></li>
+                    <li><a href="anti_piracy.html"><span class="button_icon antipiracy"></span>Anti-Piracy</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="button_icon settings"></span>Settings</a>
+                        <ul class="dropdown-menu haulix_main_submenu">
+                            <li><a href="settings_general_info.html"><i class="fa fa-info-circle"></i>General Information</a></li>
+                            <li><a href="plan_info.html"><i class="fa fa-calendar"></i>Plan Information</a></li>
+                            <li><a href="payment_setup.html"><i class="fa fa-credit-card"></i>Payment Setup</a></li>
+                            <li><a href="extra_user_accounts.html"><i class="fa fa-user"></i>Extra User Accounts</a></li>
+                            <li><a href="reports.html"><i class="fa fa-file-text"></i>Reports</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Navbar END -->
+
+    <div class="promos_midmain_area">
+        <div class="container">
+            <div class="row">
+                <section class="user_greeting_box pull-right">
+                    <h3>Hi, <span id="user_name">Kelly</span></h3>
+                    <span class="user_thumb user_001"></span>
+                    <span class="notification_box"><a href="#"><i class="fa fa-bell-o fa-2x"></i></a>
+                        <span id="notification_nr" class="notification_number animated flipInY">5</span>
+                    </span>
+                </section>
+                <div class="clearfix"></div>
+                <section class="col-sm-5 pull-left dashboard_info_box">
+                    <h2>Promo Editor</h2>
+                </section>
+                <section class="col-sm-5 pull-right dashboard_info_box_rite">
+                    <p>Last updated <span id="update_date">Today</span> at <span id="update_time">8:20AM</span></p>
+                    <section class="pull-right refresh_button_box">
+                        <a href="javascript:void(0)"><i class="fa fa-refresh fa-2x hvr-shrink"></i> </a>
+                        <small>Refresh</small>
+                    </section>
+                </section>
+
+                <div class="promo_edit_box col-sm-12">
+                    <section class="multibutton_holder">
+                        <button class="btn btn-default design_btn multibutton"><i class="fa fa-newspaper-o"></i>Design</button>
+                        <button class="btn btn-default preview_btn multibutton"><i class="fa fa-volume-up"></i>Preview</button>
+                        <button class="btn btn-default delete_btn multibutton"><i class="fa fa-trash"></i>Delete</button>
+                        <button class="btn btn-default save_btn multibutton"><i class="fa fa-download"></i>Save</button>
+                        <button class="btn btn-link cancel_btn">Cancel</button>
+                    </section>
+                    <section class="switch_holder">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                        <p>Switch <span>On</span>/Off</p>
+                    </section>
+                    <div class="promo_editor_form_holder">
+                        <form id="promoEditorForm" role="form" class="promo_editor_form">
+                            <fieldset class="col-sm-6 form_leftside_promo">
+                                <div class="form-group">
+                                    <label for="artist" class="gi_form_lbl">Artist</label>
+                                    <input type="text" class="form-control gi_form_input" id="artist" value="Janet Jackson">
+                                </div>
+                                <div class="form-group">
+                                    <label for="albumTitle" class="gi_form_lbl">Album Title</label>
+                                    <input type="text" class="form-control gi_form_input" id="albumTitle" value="Unbreakable">
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="col-sm-6 form_riteside_promo">
+                                <div class="form-group">
+                                    <label for="recordLabel" class="gi_form_lbl">Record Label</label>
+                                    <input type="text" class="form-control gi_form_input" id="recordLabel" value="Acme Records">
+                                </div>
+                                <div class="form-group datepicker_formgroup">
+                                    <label for="datepickerPromo" class="gi_form_lbl">Release Date</label>
+                                    <span class="date_boxx_icon_promo"></span>
+                                    <input id="datepickerPromo" class="date_boxx_promo">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="promo_description_holder">
+                        <small>Description</small>
+                        <div class="main_text_toolbox_2">
+                            <div class="btn-group main_text_toolbox_group" role="group">
+                                <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-bold"></i> </button>
+                                <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-italic"></i> </button>
+                            </div>
+                            <div class="btn-group main_text_toolbox_group" role="group">
+                                <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-link"></i> </button>
+                            </div>
+                            <div class="btn-group main_text_toolbox_group" role="group">
+                                <button type="button" class="btn btn-default dropdown-toggle toolbox_btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    A
+                                    <span class="caret"></span>
+                                </button>
+                            </div>
+                            <div class="fontsize_selector_holder">
+                                <select id="fontsize_selekta">
+                                    <option></option>
+                                    <option>8px</option>
+                                    <option>10px</option>
+                                    <option>12px</option>
+                                    <option>14px</option>
+                                    <option>16px</option>
+                                    <option>18px</option>
+                                    <option>22px</option>
+                                    <option>24px</option>
+                                    <option>32px</option>
+                                </select>
+                            </div>
+                            <div class="btn-group main_text_toolbox_group" role="group">
+                                <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-list-ul"></i> </button>
+                            </div>
+                            <div class="btn-group main_text_toolbox_group" role="group">
+                                <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-align-left"></i> </button>
+                                <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-align-center"></i> </button>
+                                <button type="button" class="btn btn-default toolbox_btn"><i class="fa fa-align-right"></i> </button>
+                            </div>
+                        </div>
+                        <div class="promo_edit_textarea_holder col-sm-7">
+                            <textarea class="content_block_promo" rows="9"></textarea>
+                        </div>
+                        <div class="drop_da_promo_image_holder col-sm-5">
+                            <div class="drag_upload_box_promo">
+                                <div id="upload-file-container_promo">
+                                    <input type="file" name="photo" />
+                                    <p>Cover Art</p>
+                                    <span class="upld_promo"></span>
+                                    <p>Drop an image to upload or click</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Promo Edit Box 1 END-->
+
+                <div class="promo_edit_box col-sm-12">
+                    <div class="col-sm-6 promo_radio_selekta_holder_left">
+                        <small class="promo_selekta_info">How can your audience access this promo?</small>
+                        <form id="promo_edit_radio_selectors">
+                            <input class="z2" type="radio" name="radio-group" id="private" value="Private" checked="checked"/>
+                            <label for="private" class="camp_lbl">Private <span class="infodrill">(Email Invitation Only)</span></label>
+                            <input class="z2" type="radio" name="radio-group" id="public" value="Public" />
+                            <label for="public" class="camp_lbl">Public <span class="infodrill">(Anyone Can Access)</span></label>
+                        </form>
+                        <form id="promo_dates">
+                            <div class="form-group datepicker_formgroup_short">
+                                <label for="promoLive" class="gi_form_lbl">When should this promo go live?</label>
+                                <span class="date_boxx_icon_promo"></span>
+                                <input id="promoLive" class="date_boxx_promo">
+                            </div>
+                            <div class="form-group datepicker_formgroup_short">
+                                <label for="promoXpire" class="gi_form_lbl">When should this promo expire?</label>
+                                <span class="date_boxx_icon_promo"></span>
+                                <input id="promoXpire" class="date_boxx_promo">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-6 promo_radio_selekta_holder_rite">
+                        <small class="promo_selekta_info">Allow Feedback (Comments & Rating)?</small>
+                        <form id="allow_notallow_selekta">
+                            <input class="z2" type="radio" name="radio-group" id="allowYes" value="Yes" checked="checked"/>
+                            <label for="allowYes" class="camp_lbl">Yes</label>
+                            <input class="z2" type="radio" name="radio-group" id="dontallowNo" value="No" />
+                            <label for="dontallowNo" class="camp_lbl">No</label>
+                        </form>
+                        <form id="promo_optionz" class="promo_stream_n_download_options">
+                            <div class="form-group datepicker_formgroup">
+                                <label for="howManyDownloadz" class="gi_form_lbl_promo_optionz">How many times can each contact download this promo?</label>
+                                <select id="howManyDownloadz">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option selected="selected">5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>Unlimited</option>
+                                </select>
+                            </div>
+                            <div class="form-group datepicker_formgroup">
+                                <label for="howManyStreamz" class="gi_form_lbl_promo_optionz">How many times can each contact stream this promo?</label>
+                                <select id="howManyStreamz">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option selected="selected">Unlimited</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="tag_input_holder col-sm-12">
+                        <label for="tagsInput" class="gi_form_lbl_promo_optionz">Descriptive Tags (separate with commas)</label>
+                        <input id="tagsInput" type="text" value="Janet Jackson, Unbreakable, Pop Shit" data-role="tagsinput" class="taginput">
+                    </div>
+                </div> <!-- Promo Edit Box 2 END-->
+
+                <div class="promo_edit_box col-sm-12">
+                    <section class="embedded_vid_options_holder">
+                        <h4>Embedded Video</h4>
+                        <span><i class="fa fa-youtube"></i> </span>
+                        <span><i class="fa fa-vimeo"></i> </span>
+                    </section>
+                    <section class="video_search_holder">
+                        <form id="vid_src" role="search" class="videolink_search">
+                            <label for="vidLinxx" class="gi_form_lbl_promo_optionz">Enter a Vimeo or YouTube share address (URL) and click Save Video</label>
+                            <input id="vidLinxx" type="text" value="https://vimeo.com/74823283" class="vindlinxinput">
+                            <button class="btn save_vidlinx_btn">Save Video</button>
+                        </form>
+                    </section>
+                    <div class="drop_da_promo_image_holder_2 col-sm-5">
+                        <div class="drag_upload_box_promo_2">
+                            <div id="upload-file-container_promo_2">
+                                <input type="file" name="photo" />
+                                <p>Photo Gallery</p>
+                                <span class="upld_promo"></span>
+                                <p>Drop an image to upload or click</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery_covers_holder col-sm-7">
+                        <div class="gal_cov_box">
+                            <section class="gal_cov_img" style="background: url('http://thestarreport.com/wp-content/uploads/2015/09/COAyluzUwAAr6dO.jpg') center center no-repeat; background-size: cover;"></section>
+                            <button class="btn remove_gal_cov_btn "><i class="fa fa-close"></i>Remove</button>
+                        </div>
+                        <div class="gal_cov_box">
+                            <section class="gal_cov_img" style="background: url('http://celebrityabc.com/wp-content/uploads/2015/05/Janet-Jackson-net-worth-2015.jpg') center center no-repeat; background-size: cover;"></section>
+                            <button class="btn remove_gal_cov_btn "><i class="fa fa-close"></i>Remove</button>
+                        </div>
+                        <div class="gal_cov_box">
+                            <section class="gal_cov_img" style="background: url('http://www.hallenstadion.ch/media/uploads/events/2293/images/janet-jackson-unbreakable-promo-pic-1.jpg') center center no-repeat; background-size: cover;"></section>
+                            <button class="btn remove_gal_cov_btn "><i class="fa fa-close"></i>Remove</button>
+                        </div>
+                    </div>
+                    <section class="pdf_ttl_holder">
+                        <h4>Adobe PDF Files</h4>
+                    </section>
+                    <div class="clearfix"></div>
+                    <section class="remove_pdf_holder">
+                        <form id="pdfForm" role="search" class="videolink_search">
+                            <input id="pdfInput" type="text" value="dope.pdf" class="removepdfinput">
+                            <button class="btn removepdf_btn"><i class="fa fa-close"></i>Remove</button>
+                        </form>
+                    </section>
+                    <div class="clearfix"></div>
+                    <div class="drop_da_promo_image_holder_dark col-sm-5">
+                        <div class="drag_upload_box_promo_dark">
+                            <div id="upload-file-container_promo_dark">
+                                <input type="file" name="photo" />
+                                <span class="upld_promo_wht"></span>
+                                <p>Drop PDF here or click</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Promo Edit Box 3 END-->
+
+                <div class="promo_edit_box fourthblock col-sm-12">
+                    <section class="col-md-4 col-sm-6 block4_ttl_holder">
+                        <h4>Add Tracks</h4>
+                        <p>Select multiple .mp3 files or a ZIP with .mp3s in it</p>
+                    </section>
+                    <section class="col-md-4 col-sm-6 track_adder_btn_holder">
+                        <div class="fileinputs">
+                            <input type="file" class="file" />
+                            <div class="fakefile">
+                                <input type="button" value="Add Files..." />
+                            </div>
+                        </div>
+                    </section>
+                    <div class="clearfix"></div>
+                    <div class="tracksboxx_holder">
+                        <div class="col-sm-6 leftside_traxx">
+                            <div class="well traxx_stripe greystripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">01</span> - Eat Me Right (feat. Wiz Khalifa)</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe whitestripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">02</span> - Rainy Thoughts</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe greystripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">03</span> - Blame The Machines</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe whitestripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">04</span> - Loop That Coupe (feat. Kalooga Samo)</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe greystripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">05</span> - Safe</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe whitestripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">06</span> - Leave A Light On</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe greystripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">07</span> - The Man Who Stole A Leopard</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 riteside_traxx">
+                            <div class="well traxx_stripe greystripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">08</span> - Other People's Lives</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe whitestripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">09</span> - Do You Remember Michael?</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe greystripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">10</span> - Shit's Fly (feat. Drake)</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe whitestripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">11</span> - Return To Now</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe greystripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">12</span> - Parallel Reality</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe whitestripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">13</span> - Before The Storm</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                            <div class="well traxx_stripe greystripe">
+                                <i class="fa fa-arrows"></i>
+                                <p class="traxx_ttl"><span class="track_number">14</span> - Run</p>
+                                <button class="btn traxx_rmv_btn"><i class="fa fa-close"></i><span class="rmv_btn_textpart">Remove</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="multibutton_holder_bottom">
+                        <button class="btn btn-default design_btn multibutton"><i class="fa fa-newspaper-o"></i>Design</button>
+                        <button class="btn btn-default preview_btn multibutton"><i class="fa fa-volume-up"></i>Preview</button>
+                        <button class="btn btn-default delete_btn multibutton"><i class="fa fa-trash"></i>Delete</button>
+                        <button class="btn btn-default save_btn multibutton"><i class="fa fa-download"></i>Save</button>
+                        <button class="btn btn-link cancel_btn">Cancel</button>
+                    </section>
+
+                </div> <!-- Promo Edit Box 4 END-->
+                </div> <!-- Main Row END -->
+        </div>
+    </div>
+
+</div> <!-- Main END -->
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-tagsinput.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+    $(function() {
+        $( "#datepickerPromo, #promoLive, #promoXpire").datepicker();
+    });
+
+</script>
+
+<!-- JS Files -->
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/donutcharts.js"></script>-->
+<script src="js/select2.full.js"></script>
+<script type="text/javascript">
+
+    $('#fontsize_selekta').select2({
+        width: '100%',
+        placeholder: 'Size',
+        minimumResultsForSearch: -1
+    });
+
+    $('#howManyDownloadz, #howManyStreamz').select2({
+        width: '25%',
+        minimumResultsForSearch: -1
+    });
+
+</script>
+<script src="js/haulix.js"></script>
+</body>
+</html>

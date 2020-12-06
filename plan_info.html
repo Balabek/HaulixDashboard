@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=1024, user-scalable = no">-->
+    <title>Haulix (App)</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap & Custom Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/yobni.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+    <link href="css/jquery.ui.timepicker.css" rel="stylesheet">
+    <link href="css/haulix.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <nav class="navbar navbar-default haulix_navbar">
+        <div class="container">
+            <!-- Toggler -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#haulixnav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo_4_app.png" class="img-responsive logo_4_app"> </a>
+            </div>
+
+            <!-- Collect sh*t-->
+            <div class="collapse navbar-collapse" id="haulixnav">
+                <ul class="nav navbar-nav navbar-right haulix_main_menu">
+                    <li><a href="dashboard.html"><span class="button_icon dashboard"></span>Dashboard</a></li>
+                    <li><a href="promos.html"><span class="button_icon promos"></span>Promos</a></li>
+                    <li><a href="contacts.html"><span class="button_icon contacts"></span>Contacts</a></li>
+                    <li><a href="campaigns.html"><span class="button_icon campaigns"></span>Campaigns</a></li>
+                    <li><a href="anti_piracy.html"><span class="button_icon antipiracy"></span>Anti-Piracy</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="button_icon settings"></span>Settings</a>
+                        <ul class="dropdown-menu haulix_main_submenu">
+                            <li><a href="settings_general_info.html"><i class="fa fa-info-circle"></i>General Information</a></li>
+                            <li><a href="plan_info.html"><i class="fa fa-calendar"></i>Plan Information</a></li>
+                            <li><a href="payment_setup.html"><i class="fa fa-credit-card"></i>Payment Setup</a></li>
+                            <li><a href="extra_user_accounts.html"><i class="fa fa-user"></i>Extra User Accounts</a></li>
+                            <li><a href="reports.html"><i class="fa fa-file-text"></i>Reports</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Navbar END -->
+
+    <div class="campaigns_midmain_area">
+        <div class="container">
+            <div class="row">
+                <section class="user_greeting_box pull-right">
+                    <h3>Hi, <span id="user_name">Kelly</span></h3>
+                    <span class="user_thumb user_001"></span>
+                    <span class="notification_box"><a href="#"><i class="fa fa-bell-o fa-2x"></i></a>
+                        <span id="notification_nr" class="notification_number animated flipInY">40</span>
+                    </span>
+                </section>
+                <div class="clearfix"></div>
+                <section class="col-sm-12 pull-left dashboard_info_box">
+                    <h2>Pricing Plans</h2>
+                    <p>Select the best plan for your business</p>
+                </section>
+                <div class="clearfix visible-xs"></div>
+
+                <div class="settings_midmain_holder col-sm-12">
+                    <section class="my_plan_holder">
+                        <label class="my_sbsrptn">My Subscription</label>
+                    </section>
+                    <div class="price_plans_holder">
+                        <h4 id="pricplan_name" class="priceplan_info">Demo Account</h4>
+                        <h4 id="pricplan_storage" class="priceplan_info"><b>196 MB</b> of Storage Space</h4>
+                        <h4 id="pricplan_bandwisth" class="priceplan_info lxs"><b>5 GB</b> of Bandwidth</h4>
+
+                        <div class="clearfix"></div>
+
+                        <div class="planbox col-sm-2 hvr-bob ">
+                            <section class="planbox_header">
+                                <h3>Ultimate Agent</h3>
+                                <h5>$999/month</h5>
+                            </section>
+                            <section class="planbox_body">
+                                <p><span>20 GB</span> of storage</p>
+                                <p><span>Unlimited</span> bandwidth</p>
+                                <p><span>Watermarking</span> included</p>
+                                <p><span>Premium</span> support</p>
+                            </section>
+                            <section class="planbox_selector_button_holder">
+                                <button class="btn select_plan_btn">Select</button>
+                            </section>
+                        </div>
+
+                        <div class="planbox col-sm-2 hvr-bob">
+                            <section class="planbox_header">
+                                <h3>Mammoth</h3>
+                                <h5>$699/month</h5>
+                            </section>
+                            <section class="planbox_body">
+                                <p><span>10 GB</span> of storage</p>
+                                <p><span>100 GB</span> bandwidth</p>
+                                <p><span>Watermarking</span> included</p>
+                                <p><span>Premium</span> support</p>
+                            </section>
+                            <section class="planbox_selector_button_holder">
+                                <button class="btn select_plan_btn">Select</button>
+                            </section>
+                        </div>
+
+                        <div class="planbox col-sm-2 hvr-bob">
+                            <section class="planbox_header">
+                                <h3>The Whale</h3>
+                                <h5>$399/month</h5>
+                            </section>
+                            <section class="planbox_body">
+                                <p><span>5 GB</span> of storage</p>
+                                <p><span>50 GB</span> bandwidth</p>
+                                <p><span>Watermarking</span> excluded</p>
+                                <p><span>Premium</span> support</p>
+                            </section>
+                            <section class="planbox_selector_button_holder">
+                                <button class="btn select_plan_btn">Select</button>
+                            </section>
+                        </div>
+
+                        <div class="planbox col-sm-2 hvr-bob">
+                            <section class="planbox_header">
+                                <h3>Mountain Climber</h3>
+                                <h5>$199/month</h5>
+                            </section>
+                            <section class="planbox_body">
+                                <p><span>3.5 GB</span> of storage</p>
+                                <p><span>20 GB</span> bandwidth</p>
+                                <p><span>Watermarking</span> excluded</p>
+                                <p><span>Premium</span> support</p>
+                            </section>
+                            <section class="planbox_selector_button_holder">
+                                <button class="btn select_plan_btn">Select</button>
+                            </section>
+                        </div>
+
+                        <div class="planbox col-sm-2 hvr-bob">
+                            <section class="planbox_header">
+                                <h3>Indie Powerhouse</h3>
+                                <h5>$89/month</h5>
+                            </section>
+                            <section class="planbox_body">
+                                <p><span>2 GB</span> of storage</p>
+                                <p><span>4 GB</span> bandwidth</p>
+                                <p><span>Watermarking</span> excluded</p>
+                                <p><span>Premium</span> support</p>
+                            </section>
+                            <section class="planbox_selector_button_holder">
+                                <button class="btn select_plan_btn">Select</button>
+                            </section>
+                        </div>
+
+                        <div class="planbox col-sm-2 hvr-bob selected_plan">
+                            <section class="planbox_header">
+                                <h3>Rising Star</h3>
+                                <h5>$29/month</h5>
+                            </section>
+                            <section class="planbox_body">
+                                <p><span>1 GB</span> of storage</p>
+                                <p><span>2 GB</span> bandwidth</p>
+                                <p><span>Watermarking</span> excluded</p>
+                                <p><span>Premium</span> support</p>
+                            </section>
+                            <section class="planbox_selector_button_holder">
+                                <button class="btn select_plan_btn">Select</button>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- Main Row END -->
+        </div>
+    </div>
+
+
+</div> <!-- Main -->
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+<!-- JS Files -->
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/donutcharts.js"></script>-->
+<script src="js/select2.full.js"></script>
+<script type="text/javascript">
+
+    $('#actualPromo').select2({
+        width: '100%'
+    });
+
+    $('#showMe, #contactsWho, #contactsWho2').select2({
+        width: '100%',
+        minimumResultsForSearch: -1
+    });
+
+</script>
+<script src="js/haulix.js"></script>
+</body>
+</html>
